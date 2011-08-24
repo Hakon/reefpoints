@@ -1,0 +1,21 @@
+section#posts {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  overflow: hidden;
+}
+
+div.highlight {
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+div.highlight pre {
+}
+
+pre, code {
+  font: 12px 'Bitstream Vera Sans Mono','Courier',monospace;
+}
