@@ -1,3 +1,7 @@
+body header section {
+  position: relative;
+}
+
 section#posts {
   width: 960px;
   margin: 0 auto;
@@ -18,4 +22,16 @@ div.highlight pre {
 
 pre, code {
   font: 12px 'Bitstream Vera Sans Mono','Courier',monospace;
+}
+
+h2#blog_title {
+  position: absolute;
+  left: 175px;
+  bottom: 20px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  -webkit-transform: rotate(-30deg);
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #2A5568;
 }
