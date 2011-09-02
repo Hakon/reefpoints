@@ -3,8 +3,10 @@
   title: DockYard Blog
 ---
 
-<ul>
-{% for post in site.posts %}
-  <li>{{ post.date | date_to_string }}<a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<section id="posts">
+  <ul>
+  {% for post in site.posts %}
+    <li class="post_link"><time pubdate datetime="">{{ post.date | date_to_string }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</section>

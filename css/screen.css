@@ -2,7 +2,7 @@ body header section {
   position: relative;
 }
 
-section#posts {
+section#posts, section#social {
   width: 960px;
   margin: 0 auto;
   padding: 20px 0px;
@@ -25,13 +25,23 @@ pre, code {
 }
 
 h2#blog_title {
+  color: #5d95ae;
   position: absolute;
   left: 175px;
   bottom: 20px;
   letter-spacing: 0.1em;
   font-weight: bold;
+  transform: rotate(-30deg);
   -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #2A5568;
+}
+
+#posts li.post_link a {
+  margin-left: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
