@@ -167,7 +167,7 @@ high hopes for the project now that is is accepted into Apache.
 
 Perhaps [Adobe's announcement that they are abandoning Flash in
 favor of HTML5 for mobile](http://techland.time.com/2011/11/09/mobile-flash-abandoned-for-html5-adobe-surrenders-apple-wins/?iid=tl-main-lede) will be seen as the turning point when
-mobile web application development was seen as a serious contender to
+mobile web application development began to be a serious contender to
 native. Or maybe it was just a coincidence that this buzz is happening
 all at once. Either way, we're happy
 people are talking about this. Discussions, arguments, and all of the
