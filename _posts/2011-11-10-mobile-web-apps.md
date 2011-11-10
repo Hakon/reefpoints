@@ -12,18 +12,18 @@ twitter: bcardarella
 Over the past 24 hours I've seen several articles ([1](http://venturebeat.com/2011/11/09/mobile-web/),[2](http://www.guardian.co.uk/technology/blog/2011/nov/03/will-html5-replace-native-apps)) on [Hacker News](http://news.ycombinator.com)
 predicting that in the near future mobile web apps are going to
 replace their native counterparts. Here at DockYard we really hope this
-happens, we believe in the mobile web and have decided forego regular
+happens. We believe in the mobile web and have decided forego regular
 web application development in favor of focusing on mobile web
 application development. However, experience has told us the future is not as nigh as we
 all hope.
 
-Native applications (iOS, Android, etc...) still have and will continue
+Native applications (iOS, Android, etc.) still have and will continue
 to have some significant advantages over mobile web apps. Let's start
 with the obvious...
 
 #### Native functionality
 
-Having access to mobile hardware such as the camera, micorophone, and
+Having access to mobile hardware such as the camera, microphone, and
 storage (file system, internal datbases, etc...) is important. There is also the issue
 of running the application in the background. None of this is currently
 possible in a mobile web application. Immediately the scope of a mobile
@@ -36,9 +36,9 @@ this native functionality. Personally, I would like to see this API
 developed further. In its current form it is simply a delegator API to
 the camera and microphone applications. We hand off application control and wait for a
 callback that has the list of media just captured. This is not good
-enough. How would a mobile web application compete with the many
+enough. How can a mobile web application compete with the many
 different native camera applications that exist with custom camera
-functionality if there was no way to
+functionality if there is no way to
 customize the camera experience? Simple: it can't. Augmented reality
 mobile web application? Nope. What about something as simple as skinning
 the camera? Not with the current working draft of the MediaCapture API.
@@ -46,7 +46,7 @@ the camera? Not with the current working draft of the MediaCapture API.
 Most mobile web browsers implement the HTML canvas element. So mobile
 web gaming is possible. But what we really want is hardware accelerated
 WebGL. It's not here yet. We're still waiting for the desktop
-canvas apps to close the gap betweent their native desktop counterparts.
+canvas apps to close the gap between their native desktop counterparts.
 Mobile web gaming will not be competing with native mobile gaming
 anytime soon.
 
@@ -56,7 +56,7 @@ Native is the clear winner here but with each new generation of phone
 hardware the lead is becoming less noticeable. In fact, I'm going to
 predict that in the 2nd half of 2012 (iPhone5, assuming Apple goes back
 to the previous iPhone release cycle) for everything
-except gaming the difference will be negligible.
+except gaming, the difference will be negligible.
 
 We're getting closer and closer to the point of convergence. Hardware is
 getting faster, JavaScript VMs are getting faster. Native and mobile web
@@ -81,7 +81,7 @@ moment for mobile web application development.
 
 #### Distribution
 
-Nothing beats the web as a distribution platform. Everytime I use a web
+Nothing beats the web as a distribution platform. Every time I use a web
 app I am on the latest version of that app. If there are any business
 critical updates they are immediately available for everybody. Native
 mobile applications are at a clear disadvantage here. We're comparing a
@@ -114,13 +114,13 @@ If you've made it this far you've probably been yelling at your screen
 "**PhoneGap!**" to several of the points I've made above. Yes, PhoneGap solves many of these problems. But how do
 we define a PhoneGap application? The technology stack I'm using is that
 of a mobile web application: HTML, CSS, JavaScript. However, the
-distribution and discovery system I'm using is that of a native
+distribution and discovery systems I am using are that of a native
 application. PhoneGap application straddle the fence betwen the two
 worlds.
 
 For those that don't know, PhoneGap extends a WebUI. It will add certain
 functionality to the JavaScript API. Access to the camera, microphone,
-filesystem [as well as many other wonderful features](http://docs.phonegap.com/en/1.2.0/index.html).
+file system [as well as many other wonderful features](http://docs.phonegap.com/en/1.2.0/index.html).
 The PhoneGap developers were smart, they saw the W3C's proposed API for
 some of this and modeled the PhoneGap API after it. In fact, PhoneGap
 should acts as a polyfill if certain functionality already exists.
@@ -144,7 +144,7 @@ There are some serious issues with the PhoneGap project. The first of
 which is the difficulty in reporting errors. This will hopefully change
 now that the project is under Apache (as [Apache Callback](http://wiki.phonegap.com/w/page/46311152/apache-callback-proposal))
 but the project has been split into different Github repos for each
-platform. So there is one for [iOS](https://github.com/phonegap/phonegap-iphone), [Android](https://github.com/phonegap/phonegap-android), [Windows Phone 7](https://github.com/phonegap/phonegap-wp7), [BlackBerry](https://github.com/phonegap/phonegap-blackberry-webworks), [WebOS](https://github.com/phonegap/phonegap-webos), etc... they are all under seperate development with very dedicated teams. If I find a common problem that effects all platforms (for example, [a suggestion I proposed on how PhoneGap currently implements its File API](https://github.com/phonegap/phonegap-iphone/issues/280)) I have to report this issue individually on each platform. This is a very ineffecient process.
+platform. So there is one for [iOS](https://github.com/phonegap/phonegap-iphone), [Android](https://github.com/phonegap/phonegap-android), [Windows Phone 7](https://github.com/phonegap/phonegap-wp7), [BlackBerry](https://github.com/phonegap/phonegap-blackberry-webworks), [WebOS](https://github.com/phonegap/phonegap-webos), etc... they are all under separate development with very dedicated teams. If I find a common problem that affects all platforms (for example, [a suggestion I proposed on how PhoneGap currently implements its File API](https://github.com/phonegap/phonegap-iphone/issues/280)) I have to report this issue individually on each platform. This is a very inefficient process.
 
 The second is the same issue stated above with the camera. While PhoneGap does give us the access to the camera we are still stuck
 with the same experience we will have with the W3C MediaCapture API: no
@@ -161,18 +161,18 @@ another callback to halt the previous function.
 [Check out the "Limitations" section on the PhoneGap wiki for some
 others](http://wiki.phonegap.com/w/page/36752779/PhoneGap%20Plugins).
 
-PhoneGap is fantastic. (despite some of the criticism I've stated) We have
-high hopes for the project now that is is accepted into Apache.
+PhoneGap is fantastic (despite some of the criticism I've stated). We have
+high hopes for the project now that it is accepted into Apache.
 
 ### Conclusion
 
 Perhaps [Adobe's announcement that they are abandoning Flash in
 favor of HTML5 for mobile](http://techland.time.com/2011/11/09/mobile-flash-abandoned-for-html5-adobe-surrenders-apple-wins/?iid=tl-main-lede) will be seen as the turning point when
-mobile web application development began to be a serious contender to
-native. Or maybe it was just a coincidence that this buzz is happening
+mobile web application development begins to be a serious contender to
+native. Or maybe it is just a coincidence that this buzz is happening
 all at once. Either way, we're happy
 people are talking about this. Discussions, arguments, and all of the
-attention in between is the best way to push this technology into the
+attention in between are the best way to push this technology into the
 future we all know is just a matter of time.
 
 As my friend [Pascal Rettig](http://twitter.com/cykod) says: It is a great time to be a web developer.
