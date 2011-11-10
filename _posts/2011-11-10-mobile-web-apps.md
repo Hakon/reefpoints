@@ -14,7 +14,7 @@ predicting that in the near future mobile web apps are going to
 replace their native counterparts. Here at DockYard we really hope this
 happens, we believe in the mobile web and have decided forego regular
 web application development in favor of focusing on mobile web
-application development. However, xperience has told us the future is not as nigh as we
+application development. However, experience has told us the future is not as nigh as we
 all hope.
 
 Native applications (iOS, Android, etc...) still have and will continue
