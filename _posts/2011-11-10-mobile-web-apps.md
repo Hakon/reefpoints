@@ -44,7 +44,8 @@ mobile web application? Nope. What about something as simple as skinning
 the camera? Not with the current working draft of the MediaCapture API.
 
 Most mobile web browsers implement the HTML canvas element. So mobile
-web gaming is possible. We're still waiting for the desktop
+web gaming is possible. But what we really want is hardware accelerated
+WebGL. It's not here yet. We're still waiting for the desktop
 canvas apps to close the gap betweent their native desktop counterparts.
 Mobile web gaming will not be competing with native mobile gaming
 anytime soon.
