@@ -2,6 +2,8 @@
 layout: post
 title: Mobile Web Apps Still Have Some Major Hurdles
 comments: true
+author: Brian Cardarella
+twitter: bcardarella
 ---
 
 # {{ page.title }}
@@ -176,3 +178,4 @@ We are not there... yet. Can anyone honestly say that in 5 years they do
 not expect mobile web applications to be the norm? It is a great time to
 be a web developer.
 
+~ [{{ page.author }}](http://twitter.com/{{ page.twitter }})
