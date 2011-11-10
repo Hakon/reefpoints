@@ -115,7 +115,7 @@ If you've made it this far you've probably been yelling at your screen
 we define a PhoneGap application? The technology stack I'm using is that
 of a mobile web application: HTML, CSS, JavaScript. However, the
 distribution and discovery systems I am using are that of a native
-application. PhoneGap application straddle the fence betwen the two
+application. PhoneGap application straddle the fence between the two
 worlds.
 
 For those that don't know, PhoneGap extends a WebUI. It will add certain
