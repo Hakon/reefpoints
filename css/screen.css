@@ -20,7 +20,7 @@ body header section h2 a:hover {
   text-decoration: none;
 }
 
-section#posts, section#social {
+section#posts, section#social, section#comments {
   width: 960px;
   margin: 0 auto;
   padding: 20px 0px;
