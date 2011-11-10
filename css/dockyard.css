@@ -1,1 +1,401 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}@font-face{font-family:"league-gothic";src:url(/fonts/league_gothic.otf) format("opentype")}body{color:#2a4954;background:#cfe5e4;font-family:ff-meta-web-pro, sans-serif}a{color:#BA4F3A;text-decoration:none}a.current,a.current:hover{color:#2a4954}a:hover{color:#E65C17;text-decoration:underline}h1,h2,h3{font-family:league-gothic,sans-serif}h1{color:#2A5568;font-size:48px;margin:0 0 20px 0;line-height:1.1em}h2,h3{color:#4A7588;font-size:36px;margin:0 0 20px 0;line-height:1.1em}p{line-height:20px;margin:0 0 20px 0}ul{line-height:20px}header{color:#4A7588;background:#FFF}header section{width:960px;margin:0 auto;padding:20px 0;overflow:hidden;background:none}header h1{margin:0;float:left;font-size:96px}header ul{float:right;font-size:24px;line-height:96px}header ul li{margin:0;float:left}header ul li a{padding:0 0 0 40px}header ul li.last{clear:both;float:right;font-size:16px;margin:-24px 0 0 0;line-height:1;background:url("/images/icons/phone.png") no-repeat 0 4px;padding-left:15px}section{padding:0}section #who-we-are section{padding:20px 0 0 0}section section{margin:0;padding:0}section section section{width:960px;margin:0 auto;padding:20px 0;overflow:hidden}section section section header{overflow:hidden;background:none;margin:0 0 20px 0}section section section header h2{margin:0;float:left}section section section header h3{margin:0;float:right}section #what-we-do,section #who-we-are{background:rgba(255,255,255,0.5)}section #what-we-do h1,section #how-we-work h1{margin:0;float:left}section #what-we-do nav,section #how-we-work nav{float:right}section #what-we-do li,section #how-we-work li{float:left;line-height:52px}section #what-we-do li a,section #how-we-work li a{float:left;padding:0 30px}section #what-we-do li a:hover,section #how-we-work li a:hover{background:#CFE5E4}section #what-we-do li a.current,section #how-we-work li a.current{background:#FFF}section #what-we-do article,section #how-we-work article{clear:both;background:#FFF;overflow:hidden;padding:20px 20px 0 20px}section #what-we-do article ul,section #how-we-work article ul{list-style:square;margin:0 0 20px 30px}section #what-we-do article ol,section #how-we-work article ol{list-style:decimal;margin:0 0 20px 30px}section #what-we-do article li,section #how-we-work article li{float:none;line-height:20px}section #what-we-do article h3,section #how-we-work article h3{font-size:24px}section #what-we-do article strong,section #how-we-work article strong{font-weight:bold}section #what-we-do article em,section #how-we-work article em{font-style:italic}section #how-we-work,section #community{background:rgba(255,255,255,0.25)}section #who-we-are article,section #community article{float:left;width:480px}section #who-we-are .about-dockyard{width:460px;padding:0 20px 0 0}section #who-we-are li{float:left;width:460px;overflow:hidden;background:#FFF;margin:0 0 20px 0;padding:10px 10px 0 10px}section #who-we-are li.even{width:440px;margin:0 20px 20px 0}section #who-we-are li.even .info{width:358px}section #who-we-are li .photo{float:left;width:72px;margin:0 10px 0 0}section #who-we-are li .photo img{width:72px}section #who-we-are li .photo a.social{float:left;display:inline-block;width:24px;height:24px}section #who-we-are li .photo a.social img{width:24px;position:absolute;-moz-transition-property:opacity;-webkit-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;-moz-transition-duration:0.25s;-webkit-transition-duration:0.25s;-o-transition-duration:0.25s;transition-duration:0.25s;-moz-transition-timing-function:linear;-webkit-transition-timing-function:linear;-o-transition-timing-function:linear;transition-timing-function:linear}section #who-we-are li .photo a.social img.gray{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}section #who-we-are li .photo a.social img.gray:hover{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}section #who-we-are li .photo a.social img.rust{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}section #who-we-are li .photo a.social img.rust:hover{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}section #who-we-are li .photo a.social.github{margin:0 0px 0 6px}section #who-we-are li .photo a.social.twitter{margin:0 3px 0 6px}section #who-we-are li .info{float:left;width:378px}section #who-we-are li .info h3{font-size:16px;font-weight:bold;margin:0 0 10px 0;font-family:ff-meta-web-pro, sans-serif}section #how-we-work article{overflow:hidden}section #how-we-work article .content{float:left;width:575px}section #how-we-work article img{float:right;margin:0 0 40px 40px}section #contact .input{padding:14px 0 15px 0;border-bottom:1px dashed rgba(0,0,0,0.15)}section #contact label{width:120px;display:inline-block;vertical-align:middle}section #contact input{margin:14px 0 0 130px}section #contact input[type='submit']{color:#FFF;font-size:16px;padding:5px 10px;background:#BA4F3A;letter-spacing:2px;border:4px solid #FFF;text-transform:uppercase;font-family:ff-meta-web-pro, sans-serif}section #contact input[type='submit']:hover{cursor:pointer;background:#E65C17}section #contact input[type='submit']:active{background:#BA4F3A}section #contact div.string input{margin:0;width:480px;border:none;background:#FFF;display:inline-block;vertical-align:middle}section #contact textarea{width:700px;border:none;background:#FFF;display:inline-block;vertical-align:text-top}section #contact .error{color:#FFF;height:28px;padding:2px 5px;line-height:28px;background:#BA4F3A;vertical-align:middle}footer{color:#4A7588;padding:20px 0;background:rgba(255,255,255,0.25)}footer section{width:960px;overflow:hidden;margin:0 auto;background:none}footer section p{margin:0;float:left}footer section nav{margin:0;float:right}footer section nav li{float:left;margin:0 0 0 20px}footer section nav li.last{background:url("/images/icons/phone.png") no-repeat 0 6px;padding-left:15px}.message{font-size:20px;margin-bottom:20px}.success{color:#5fcc29}form input,form textarea,form label{padding:5px;font-size:16px}div.field_with_errors div.ui-effects-wrapper{display:inline-block !important}.anchor{top:0;left:0px;width:159px;height:356px;position:absolute;background:url(/assets/anchor.png) 0 0 no-repeat}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+a img {
+    border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+@font-face {
+    font-family: "league-gothic";
+    src: url(/fonts/league_gothic.otf) format("opentype");
+}
+body {
+    color: #2a4954;
+    background: #cfe5e4;
+    font-family: ff-meta-web-pro,  sans-serif;
+}
+a {
+    color: #BA4F3A;
+    text-decoration: none;
+}
+a.current, a.current:hover {
+    color: #2a4954;
+}
+a:hover {
+    color: #E65C17;
+    text-decoration: underline;
+}
+h1, h2, h3, h4 {
+    font-family: league-gothic, sans-serif;
+}
+h1 {
+    color: #2A5568;
+    font-size: 48px;
+    margin: 0 0 20px 0;
+    line-height: 1.1em;
+}
+h2, h3, h4 {
+    color: #4A7588;
+    font-size: 36px;
+    margin: 0 0 20px 0;
+    line-height: 1.1em;
+}
+h4 {
+    font-size: 30px;
+}
+p {
+    line-height: 20px;
+    margin: 0 0 20px 0;
+}
+ul {
+    line-height: 20px;
+}
+header {
+    color: #4A7588;
+    background: #FFF;
+}
+header section {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+    background: none;
+}
+header h1 {
+    margin: 0;
+    float: left;
+    font-size: 96px;
+}
+header ul {
+    float: right;
+    font-size: 24px;
+    line-height: 96px;
+}
+header ul li {
+    margin: 0;
+    float: left;
+}
+header ul li a {
+    padding: 0 0 0 40px;
+}
+header ul li.last {
+    clear: both;
+    float: right;
+    font-size: 16px;
+    margin: -24px 0 0 0;
+    line-height: 1;
+    background: url("/images/icons/phone.png") no-repeat 0 4px;
+    padding-left: 15px;
+}
+section {
+    padding: 0;
+}
+section #who-we-are section {
+    padding: 20px 0 0 0;
+}
+section section {
+    margin: 0;
+    padding: 0;
+}
+section section section {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+section section section header {
+    overflow: hidden;
+    background: none;
+    margin: 0 0 20px 0;
+}
+section section section header h2 {
+    margin: 0;
+    float: left;
+}
+section section section header h3 {
+    margin: 0;
+    float: right;
+}
+section #what-we-do, section #who-we-are {
+    background: rgba(255, 255, 255, 0.5);
+}
+section #what-we-do h1, section #how-we-work h1 {
+    margin: 0;
+    float: left;
+}
+section #what-we-do nav, section #how-we-work nav {
+    float: right;
+}
+section #what-we-do li, section #how-we-work li {
+    float: left;
+    line-height: 52px;
+}
+section #what-we-do li a, section #how-we-work li a {
+    float: left;
+    padding: 0 30px;
+}
+section #what-we-do li a:hover, section #how-we-work li a:hover {
+    background: #CFE5E4;
+}
+section #what-we-do li a.current, section #how-we-work li a.current {
+    background: #FFF;
+}
+section #what-we-do article, section #how-we-work article {
+    clear: both;
+    background: #FFF;
+    overflow: hidden;
+    padding: 20px 20px 0 20px;
+}
+section #what-we-do article ul, section #how-we-work article ul {
+    list-style: square;
+    margin: 0 0 20px 30px;
+}
+section #what-we-do article ol, section #how-we-work article ol {
+    list-style: decimal;
+    margin: 0 0 20px 30px;
+}
+section #what-we-do article li, section #how-we-work article li {
+    float: none;
+    line-height: 20px;
+}
+section #what-we-do article h3, section #how-we-work article h3 {
+    font-size: 24px;
+}
+section #what-we-do article strong, section #how-we-work article strong {
+    font-weight: bold;
+}
+section #what-we-do article em, section #how-we-work article em {
+    font-style: italic;
+}
+section #how-we-work, section #community {
+    background: rgba(255, 255, 255, 0.25);
+}
+section #who-we-are article, section #community article {
+    float: left;
+    width: 480px;
+}
+section #who-we-are .about-dockyard {
+    width: 460px;
+    padding: 0 20px 0 0;
+}
+section #who-we-are li {
+    float: left;
+    width: 460px;
+    overflow: hidden;
+    background: #FFF;
+    margin: 0 0 20px 0;
+    padding: 10px 10px 0 10px;
+}
+section #who-we-are li.even {
+    width: 440px;
+    margin: 0 20px 20px 0;
+}
+section #who-we-are li.even .info {
+    width: 358px;
+}
+section #who-we-are li .photo {
+    float: left;
+    width: 72px;
+    margin: 0 10px 0 0;
+}
+section #who-we-are li .photo img {
+    width: 72px;
+}
+section #who-we-are li .photo a.social {
+    float: left;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+section #who-we-are li .photo a.social img {
+    width: 24px;
+    position: absolute;
+    -moz-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+section #who-we-are li .photo a.social img.gray {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+section #who-we-are li .photo a.social img.gray:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+section #who-we-are li .photo a.social img.rust {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+section #who-we-are li .photo a.social img.rust:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+section #who-we-are li .photo a.social.github {
+    margin: 0 0px 0 6px;
+}
+section #who-we-are li .photo a.social.twitter {
+    margin: 0 3px 0 6px;
+}
+section #who-we-are li .info {
+    float: left;
+    width: 378px;
+}
+section #who-we-are li .info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    font-family: ff-meta-web-pro,  sans-serif;
+}
+section #how-we-work article {
+    overflow: hidden;
+}
+section #how-we-work article .content {
+    float: left;
+    width: 575px;
+}
+section #how-we-work article img {
+    float: right;
+    margin: 0 0 40px 40px;
+}
+section #contact .input {
+    padding: 14px 0 15px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+}
+section #contact label {
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+}
+section #contact input {
+    margin: 14px 0 0 130px;
+}
+section #contact input[type='submit'] {
+    color: #FFF;
+    font-size: 16px;
+    padding: 5px 10px;
+    background: #BA4F3A;
+    letter-spacing: 2px;
+    border: 4px solid #FFF;
+    text-transform: uppercase;
+    font-family: ff-meta-web-pro,  sans-serif;
+}
+section #contact input[type='submit']:hover {
+    cursor: pointer;
+    background: #E65C17;
+}
+section #contact input[type='submit']:active {
+    background: #BA4F3A;
+}
+section #contact div.string input {
+    margin: 0;
+    width: 480px;
+    border: none;
+    background: #FFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+section #contact textarea {
+    width: 700px;
+    border: none;
+    background: #FFF;
+    display: inline-block;
+    vertical-align: text-top;
+}
+section #contact .error {
+    color: #FFF;
+    height: 28px;
+    padding: 2px 5px;
+    line-height: 28px;
+    background: #BA4F3A;
+    vertical-align: middle;
+}
+footer {
+    color: #4A7588;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.25);
+}
+footer section {
+    width: 960px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: none;
+}
+footer section p {
+    margin: 0;
+    float: left;
+}
+footer section nav {
+    margin: 0;
+    float: right;
+}
+footer section nav li {
+    float: left;
+    margin: 0 0 0 20px;
+}
+footer section nav li.last {
+    background: url("/images/icons/phone.png") no-repeat 0 6px;
+    padding-left: 15px;
+}
+.message {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.success {
+    color: #5fcc29;
+}
+form input, form textarea, form label {
+    padding: 5px;
+    font-size: 16px;
+}
+div.field_with_errors div.ui-effects-wrapper {
+    display: inline-block !important;
+}
+.anchor {
+    top: 0;
+    left: 0px;
+    width: 159px;
+    height: 356px;
+    position: absolute;
+    background: url(/assets/anchor.png) 0 0 no-repeat;
+}
+strong {
+  font-weight: bold;
+}
