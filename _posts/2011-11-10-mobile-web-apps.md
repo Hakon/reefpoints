@@ -174,8 +174,6 @@ people are talking about this. Discussions, arguments, and all of the
 attention in between is the best way to push this technology into the
 future we all know is just a matter of time.
 
-We are not there... yet. Can anyone honestly say that in 5 years they do
-not expect mobile web applications to be the norm? It is a great time to
-be a web developer.
+As my friend [Pascal Rettig](http://twitter.com/cykod) says all of the time: It is a great time to be a web developer.
 
 ~ [{{ page.author }}](http://twitter.com/{{ page.twitter }})
