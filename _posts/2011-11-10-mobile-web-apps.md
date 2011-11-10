@@ -175,6 +175,6 @@ people are talking about this. Discussions, arguments, and all of the
 attention in between is the best way to push this technology into the
 future we all know is just a matter of time.
 
-As my friend [Pascal Rettig](http://twitter.com/cykod) says all of the time: It is a great time to be a web developer.
+As my friend [Pascal Rettig](http://twitter.com/cykod) says: It is a great time to be a web developer.
 
 ~ [{{ page.author }}](http://twitter.com/{{ page.twitter }})
