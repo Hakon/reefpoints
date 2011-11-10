@@ -34,7 +34,7 @@ be](http://www.w3.org/TR/html-media-capture/). It may be a
 matter of time until we see mobile browsers begin to provide access to
 this native functionality. Personally, I would like to see this API
 developed further. In its current form it is simply a delegator API to
-the camera and microphone application. We hand off application control and wait for a
+the camera and microphone applications. We hand off application control and wait for a
 callback that has the list of media just captured. This is not good
 enough. How would a mobile web application compete with the many
 different native camera applications that exist with custom camera
