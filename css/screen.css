@@ -27,6 +27,23 @@ section#posts, section#social, section#comments {
   overflow: hidden;
 }
 
+section#posts {
+  padding-top: 0px;
+}
+
+section#social {
+  padding-bottom: 0px;
+}
+
+section#social p {
+  margin-bottom: 0px;
+  float: right;
+}
+
+section#social p a {
+  font-weight: bold;
+}
+
 div.highlight {
   padding: 5px;
   margin-left: 20px;
