@@ -4,7 +4,10 @@ layout: default
 
 <section id="posts">
   <article>
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.date || date_to_string }}</h2>
     {{ content }}
+    ~ <a href="http://twitter.com/{{ page.twitter }}">{{ page.author}}</a>
   </article>
 </section>
 
