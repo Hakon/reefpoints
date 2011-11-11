@@ -1,21 +1,38 @@
-body header section {
-  position: relative;
+header section header {
+  float: left;
+  width: 250px;
 }
 
-body header section h1 a {
+header section header h2 {
+  line-height: 0;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header section header h2 a {
+  color: #5d95ae;
+}
+
+header section header h2 a span {
+}
+
+header section h1 a {
   color: #2A5568;
 }
 
-body header section h1 a:hover {
+header section h1 a:hover {
   color: #2A5568;
   text-decoration: none;
 }
 
-body header section h2 a {
+header section h2 a {
   color: #5D95AE;
 }
 
-body header section h2 a:hover {
+header section h2 a:hover {
   color: #5D95AE;
   text-decoration: none;
 }
@@ -57,22 +74,6 @@ div.highlight pre {
 
 pre, code {
   font: 12px 'Bitstream Vera Sans Mono','Courier',monospace;
-}
-
-h2#blog_title {
-  color: #5d95ae;
-  position: absolute;
-  left: 175px;
-  bottom: 20px;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-  transform: rotate(-30deg);
-  -webkit-transform: rotate(-30deg);
-  -moz-transform: rotate(-30deg);
-  -o-transform: rotate(-30deg);
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2A5568;
 }
 
 #posts li.post_link a {
