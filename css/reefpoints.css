@@ -1,41 +1,38 @@
+/* header */
+
 header section header {
   float: left;
   width: 250px;
 }
 
+header section header h1 a {
+  color: #2A5568;
+}
+
+header section header h1 a:hover {
+  color: #2A5568;
+  text-decoration: none;
+}
+
 header section header h2 {
   line-height: 0;
   font-size: 20px;
+  text-align: center;
   font-weight: normal;
   letter-spacing: 10px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 header section header h2 a {
-  color: #5d95ae;
-}
-
-header section header h2 a span {
-}
-
-header section h1 a {
-  color: #2A5568;
-}
-
-header section h1 a:hover {
-  color: #2A5568;
-  text-decoration: none;
-}
-
-header section h2 a {
   color: #5D95AE;
 }
 
-header section h2 a:hover {
+header section header h2 a:hover {
   color: #5D95AE;
   text-decoration: none;
 }
+
+/* content */
 
 section#posts, section#social, section#comments {
   width: 960px;
