@@ -22,7 +22,7 @@ It would be awesome if GitHub allowed us to create new [blobs](http://book.git-s
 At that point GitHub would be a full-service blog engine. Think about it, they already do the
 hosting, version tracking, and editing of files through the web
 interface. If file creation was added that's pretty much all I would
-want. ([Jekyll has a way to track drafts by settin the `published`
+want. ([Jekyll has a way to track drafts by setting the `published`
 flag](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter))
 
 So if anybody at GitHub is reading, can we please have this feature?
