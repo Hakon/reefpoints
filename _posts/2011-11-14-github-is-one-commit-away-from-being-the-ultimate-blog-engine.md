@@ -8,7 +8,7 @@ github: bcardarella
 ---
 
 This past August [GitHub released file editing using the Ace code
-editor](https://github.com/blog/905-edit-like-an-ace) It's pretty damn
+editor](https://github.com/blog/905-edit-like-an-ace). It's pretty damn
 awesome if you haven't tried it. Basically, you get
 [TextMate](http://macromates.com) in your
 browser. Here are [DockYard](http://dockyard.com) we've been using
