@@ -11,7 +11,7 @@ This past August [GitHub released file editing using the Ace code
 editor](https://github.com/blog/905-edit-like-an-ace). It's pretty damn
 awesome if you haven't tried it. Basically, you get
 [TextMate](http://macromates.com) in your
-browser. Here are [DockYard](http://dockyard.com) we've been using
+browser. Here at [DockYard](http://dockyard.com) we've been using
 [GitHub Pages](http://pages.github.com/) to host this blog. The posts
 are written in [Jekyll](https://github.com/mojombo/jekyll). So we're
 doing all of our post creation and editing locally.
