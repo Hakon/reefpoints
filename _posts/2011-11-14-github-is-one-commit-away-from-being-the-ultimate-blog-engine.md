@@ -20,7 +20,7 @@ doing all of our post creation and editing locally.
 
 It would be awesome if GitHub allowed us to create new [blobs](http://book.git-scm.com/1_the_git_object_model.html) from GitHub.
 At that point GitHub would be a full-service blog engine. Think about it, they already do the
-hosting, version tracking and editing of files through the web
+hosting, version tracking, and editing of files through the web
 interface. If file creation was added that's pretty much all I would
 want. ([Jekyll has a way to track drafts by settin the `published`
 flag](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter))
