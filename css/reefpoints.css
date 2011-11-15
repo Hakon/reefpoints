@@ -51,7 +51,6 @@ section#social {
 
 section#social p {
   margin-bottom: 0px;
-  float: right;
 }
 
 section#social p a {
@@ -77,4 +76,18 @@ pre, code {
   margin-left: 20px;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+ol {
+  list-style: decimal inside;
+  padding-bottom: 20px;
+}
+
+section#posts img {
+  border: 1px solid #999;
+}
+
+blockquote {
+  padding-left: 20px;
+  font-style: italic;
 }
