@@ -1,5 +1,9 @@
 /* header */
 
+header section {
+  padding-bottom: 0px;
+}
+
 header section header {
   float: left;
   width: 250px;
@@ -41,10 +45,6 @@ section#posts, section#post, section#social, section#comments {
   overflow: hidden;
 }
 
-section#posts, section#post {
-  padding-top: 0px;
-}
-
 section#social {
   padding-bottom: 0px;
 }
@@ -72,18 +72,14 @@ pre, code {
   font: 12px 'Bitstream Vera Sans Mono','Courier',monospace;
 }
 
-#posts li a {
+section#posts li a {
   margin-left: 20px;
   font-size: 1.25em;
   /* font-weight: bold;*/
 }
 
-#posts li {
+section#posts li {
   margin-bottom: 10px;
-}
-
-#posts ul {
-  margin-top: 10px;
 }
 
 ol {
