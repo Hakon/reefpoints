@@ -34,14 +34,14 @@ header section header h2 a:hover {
 
 /* content */
 
-section#posts, section#social, section#comments {
+section#posts, section#post, section#social, section#comments {
   width: 960px;
   margin: 0 auto;
   padding: 20px 0px;
   overflow: hidden;
 }
 
-section#posts {
+section#posts, section#post {
   padding-top: 0px;
 }
 
@@ -72,10 +72,18 @@ pre, code {
   font: 12px 'Bitstream Vera Sans Mono','Courier',monospace;
 }
 
-#posts li.post_link a {
+#posts li a {
   margin-left: 20px;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.25em;
+  /* font-weight: bold;*/
+}
+
+#posts li {
+  margin-bottom: 10px;
+}
+
+#posts ul {
+  margin-top: 10px;
 }
 
 ol {
