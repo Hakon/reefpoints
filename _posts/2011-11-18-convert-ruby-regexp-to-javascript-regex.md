@@ -20,5 +20,15 @@ class Regexp
 end
 {% endhighlight %}
 
+When you render it to the client simply instantiate a new `RegExp`
+object with the resulting string:
+
+{% highlight javascript %}
+new RegExp(regexpStringFromRuby);
+{% endhighlight %}
+
 If there are any edge-cases that won't convert cleanly please report
 them in the comments.
+
+See how it is being used in `ClientSideValidations` [to_json](https://github.com/bcardarella/client_side_validations/blob/master/lib/client_side_validations/core_ext/regexp.rb)
+[tests cases](https://github.com/bcardarella/client_side_validations/blob/master/test/core_ext/cases/test_core_ext.rb)
