@@ -41,8 +41,25 @@ header section header h2 a:hover {
 section#posts, section#post, section#comments {
   width: 960px;
   margin: 0 auto;
-  padding: 20px 0px;
   overflow: hidden;
+  padding: 20px 0px;
+}
+
+section#posts {
+  padding: 40px 0 20px 0;
+}
+
+section#social {
+  padding-bottom: 0px;
+}
+
+section#social p {
+  margin-bottom: 0px;
+  float: right;
+}
+
+section#social p a {
+  font-weight: bold;
 }
 
 div.highlight {
@@ -59,6 +76,18 @@ div.highlight pre {
 
 pre, code {
   font: 12px 'Bitstream Vera Sans Mono','Courier',monospace;
+}
+
+section article {
+  margin: 0 0 21px 0;
+  padding: 0 0 0px 0;
+  border-bottom: 1px dashed #4A7588;
+  min-height: 85px;
+}
+
+section article:last-child {
+  padding: 0;
+  border: none;
 }
 
 section#posts li a {
@@ -88,3 +117,53 @@ blockquote {
 p {
   margin-top: 20px;
 }
+
+section article header {
+  background: none;
+}
+
+section article header time {
+  float: right;
+  color: #4A7588;
+  display: block;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 0 5px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: league-gothic, sans-serif;
+}
+
+section#posts article header h4 {
+  float: right;
+  clear: both;
+  font-size: 20px;
+  text-transform: lowercase;
+  font-family: league-gothic, sans-serif;
+  margin: 0px;
+}
+
+section#posts article header h4 a {
+  color: #4A7588;
+}
+
+section article header h2, section#posts article p {
+  width: 800px;
+}
+
+h5 {
+  font-family: league-gothic, sans-serif;
+  font-size: 25px;
+  color: #4A7588;
+}
+
+section#post article ul {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+ol {
+  padding-bottom: 0px;
+  margin-left: 10px;
+}
+

@@ -4,9 +4,15 @@
 ---
 
 <section id="posts">
-  <ul>
   {% for post in site.posts %}
-  <li class="post_link"><time pubdate datetime="{{ post.date }}">{{ post.date || date_to_string }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <article>
+      <header>
+        <time pubdate datetime="{{ post.date }}">{{ post.date || date_to_string }}</time>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </header>
+      <p>
+        Fusce eu lorem massa, ut vulputate odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed porta magna ut turpis varius et imperdiet eros scelerisque. Maecenas lectus nulla, dictum id cursus nec, bibendum quis nibh. Phasellus in orci nec nisl malesuada pharetra. Suspendisse sagittis feugiat mauris, quis rhoncus urna aliquam id. Cras euismod, leo ultrices sagittis gravida, risus ante feugiat nulla, sit amet consequat lacus massa ut lacus.
+      </p>
+    </article>
   {% endfor %}
-  </ul>
 </section>
