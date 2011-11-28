@@ -5,6 +5,7 @@ comments: true
 author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
+summary: Brian summarizes DockYard's experience thus far with mobile web apps and some of the existing challenges to compete with native
 ---
 
 Over the past 24 hours I've seen several articles ([1](http://venturebeat.com/2011/11/09/mobile-web/),[2](http://www.guardian.co.uk/technology/blog/2011/nov/03/will-html5-replace-native-apps)) on [Hacker News](http://news.ycombinator.com)
