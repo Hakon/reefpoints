@@ -6,6 +6,7 @@ author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
 summary: A simple extraction from ClientSideValidations
+category: ruby
 ---
 
 This has a very limited use case, but I needed it for
