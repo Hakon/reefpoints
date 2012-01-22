@@ -83,7 +83,7 @@ hand with ClientSideValidations.
 I've got a bunch of [issues in
 ClientSideValidations](https://github.com/bcardarella/client_side_validations/issues) I want to fix, I'm
 guessing maybe a week or two to get through all of these. I'll go
-through a few `beta`s then an release candidate or two. I'm very much
+through a few `beta` gems then a release candidate or two. I'm very much
 so open to community contributions. If you want to help, please do!
 
 You can start using this today with the beta version. All of the plugins
