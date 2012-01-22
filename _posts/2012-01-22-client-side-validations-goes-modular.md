@@ -9,7 +9,7 @@ summary: Brian summarizes the changes to come in ClientSideValidations 3.2.0
 category: ruby
 ---
 
-ClientSideValidations has been gaining popularity over the past few
+[ClientSideValidations](https://github.com/bcardarella/client_side_validations) has been gaining popularity over the past few
 months as it is nearing 1000 watchers on Github. With the release of
 Rails 3.2.0 I've decided to start extracting out all of the non-Rails
 components, such as SimpleForm support and Mongoid support, into their
@@ -85,6 +85,9 @@ ClientSideValidations](https://github.com/bcardarella/client_side_validations/is
 guessing maybe a week or two to get through all of these. I'll go
 through a few `beta`s then an release candidate or two. I'm very much
 so open to community contributions. If you want to help, please do!
+
+You can start using this today with the beta version. All of the plugins
+require the beta version of ClientSideValidations 3.2.0.
 
 ## The Future ##
 
