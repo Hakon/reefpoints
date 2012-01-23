@@ -14,7 +14,7 @@ months as it is nearing 1000 watchers on Github. With the release of
 Rails 3.2.0 I've decided to start extracting out all of the non-Rails
 components, such as SimpleForm support and Mongoid support, into their
 own gems. I want to disucss my reasons for doing this as I believe this
-path of modularity is going to mean better gem maintence, more frequent
+path of modularity is going to mean better gem maintenance, more frequent
 releases, and the opportunity for the community to really get involved.
 
 Last night I released ClientSideValidations-3.2.0.beta.1 and I have extracted the following into their own gems:
