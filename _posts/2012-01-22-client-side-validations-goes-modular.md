@@ -46,7 +46,7 @@ upgrade Mongoid, none of which are my business.
 
 Pulling the Mongoid code out into its own plugin allows this bug to be
 fixed there and I can continue to do bug fixes/feature development in
-ClientSideValidations that everyone an benefit from.
+ClientSideValidations that everyone can benefit from.
 
 ## More than just SemVer ##
 
