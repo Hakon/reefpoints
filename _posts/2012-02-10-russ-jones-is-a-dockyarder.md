@@ -20,3 +20,5 @@ I'm very happy to announce that Russ has agreed to come on board as a
 partner.
 
 Now I just have to get him to write some blog posts...
+
+[Follow Russ on Twitter](http://twitter.com/codeofficer)
