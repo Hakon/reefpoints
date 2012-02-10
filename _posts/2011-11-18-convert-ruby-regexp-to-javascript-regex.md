@@ -7,6 +7,7 @@ twitter: bcardarella
 github: bcardarella
 summary: A simple extraction from ClientSideValidations
 category: ruby
+social: true
 ---
 
 This has a very limited use case, but I needed it for

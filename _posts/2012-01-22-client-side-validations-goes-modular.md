@@ -7,6 +7,7 @@ twitter: bcardarella
 github: bcardarella
 summary: Brian summarizes the changes to come in ClientSideValidations 3.2.0
 category: ruby
+social: true
 ---
 
 [ClientSideValidations](https://github.com/bcardarella/client_side_validations) has been gaining popularity over the past few

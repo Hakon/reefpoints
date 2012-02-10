@@ -10,16 +10,18 @@ layout: default
       <h4>by {{ page.author }}</h4>
     {% endif %}
     {{ content }}
-      <p class="social">
-        Follow {{ page.author }}
-        {% if page.twitter %}
-          <a href="http://twitter.com/{{ page.twitter }}">Twitter</a>
-        {% endif %}
-        {% if page.github %}
-          <a href="http://github.com/{{ page.twitter }}">Github</a>
-        {% endif %}
-      </p>
-      <p class="social"><a href="http://twitter.com/dockyard" target="_blank">Follow DockYard on Twitter</a><p>
+      {% if page.social %}
+        <p class="social">
+          Follow {{ page.author }}
+          {% if page.twitter %}
+            <a href="http://twitter.com/{{ page.twitter }}">Twitter</a>
+          {% endif %}
+          {% if page.github %}
+            <a href="http://github.com/{{ page.twitter }}">Github</a>
+          {% endif %}
+        </p>
+        <p class="social"><a href="http://twitter.com/dockyard" target="_blank">Follow DockYard on Twitter</a><p>
+      {% endif %}
   </article>
 </section>
 

@@ -5,6 +5,7 @@ comments: true
 author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
+social: true
 ---
 
 This past August [GitHub released file editing using the Ace code

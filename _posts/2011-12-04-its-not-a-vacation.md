@@ -5,6 +5,7 @@ comments: true
 author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
+social: true
 ---
 
 DockYard is invading The Ocean State!
