@@ -13,7 +13,7 @@ category: announcement
 
 Russ and I met during the first [Rails Camp New
 England](http://railscamps.com). Over the past few years we've gotten to
-know one another and have been looking to collaborateas developers. Last
+know one another and have been looking to collaborate. Last
 March Russ, myself, and a few others, got together to talk about the
 possibility of starting our own consultancy. As we were all individually
 freelancing. As often happens getting a bunch of freelances on the same
