@@ -6,7 +6,10 @@ author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
 category: ruby
+social: true
 ---
+
+[Be sure to check out Bryan Helmkamp's blog post on the same topic](http://www.rubyflow.com/items/7166-what-code-goes-in-the-lib-directory)
 
 The `lib/` directory is the Red Headded Stepchild of your Rails
 application. Let's discuss some conventions for keeping it clean and
@@ -73,31 +76,6 @@ app's `lib/` instead of in the proper gem. This of course is more of an interest
 useful. But it does do a good job of demonstrating how Rubygems' lookup
 happens.
 
-#### Using lib/ instead of monkey patching or forking ####
-
-I have seen this far too often: A gem has a bug or does not do exactly
-what the developer wants. This is Ruby and we have Github: FORK! Fork
-the gem, patch the code, submit a pull request that gets ignored, original 
-gem gets updated over time, those changes and bug fixes never
-get pulled into the fork, things get ugly...
-
-I suggest the following pattern: Inheritence.
-
-We have been using OmniAuth-Identity in a recent project. Unfortunately
-the authentication only does a case-sensitive match against email
-addresses. This may be a bug. But in the mean time I do no want to
-monkey-patch and I do not want to form. Instead I will inherit 
-OmniAuth-Identity into a new class that will allow me to override this
-behavior. I'll call this class `MyIdentity`. I could dump the file in
-the base `lib/` directory but because the `lib/` directory is exposed on
-the load path I don't want to possibly step on the toes of any other
-libraries. Instead I'll namespace it in the exact same way OmniAuth
-namespaces its own strategies: `lib/omniauth/my_identity.rb`
-
-I create an initializer called `lib_loader.rb` and use this to require
-anything in lib. (I am not a fan of adding `lib/` to Rails'
-autoload_paths, but that is just a preference)
-
 #### Use initializers for initializing, that is all ####
 
 I have seen developers dump code into initializers that has no business
@@ -109,4 +87,116 @@ directory. If you **must** monkey patch. Put it into the `lib/`
 directory. If you are creating a new class or module that has no
 business being in `app/models` put it in to the `lib/` directory.
 
+#### Using lib/ to extend core, stlib, or a gem ####
 
+Far too often I've needed to extend a class that is being defined
+outside of my project. There are a few ways to deal with this. You can
+use a [Composite](http://en.wikipedia.org/wiki/Composite_pattern) to
+define a new class that you can then play around with. The downside to
+this is that I sometimes want to modify a class that is being inherited
+by other classes. This is when I think it is appropriate to [Monkey
+Patch](http://en.wikipedia.org/wiki/Monkey_patch).
+
+The pattern I have fallen upon is to define a `gem_ext/` directory and a
+`gem_ext.rb` file in lib. I then make sure the extensions are loaded up
+using an initializer. For last of a better term I call this
+`lib_loader.rb`. Lets start with the loader.
+
+{% highlight ruby %}
+# config/initializers/lib_loader.rb
+
+require 'gem_ext'
+{% endhighlight %}
+
+Simple enough. Now for this example I'll use a [Haml](http://haml-lang.com/) custom filter I wrote.
+This filter allows me to write [Handlebars](http://handlebarsjs.com)
+templates in my views like so:
+
+{% highlight haml %}
+-# app/views/home/show.html.haml
+
+:handlebars
+  // handlebars code goes here
+{% endhighlight %}
+
+Now I can easily add handlebar templates to any haml file. This is how I
+did it.
+
+Under `lib/gem_ext` I defined a `haml/` directory and a `haml.rb` file. Then I defined `haml/custom_filters.rb` and inside that file
+I added
+
+{% highlight ruby %}
+# lib/gem_ext/haml/custom_filters.rb
+
+module Haml::Filters
+  module Handlebars
+    include Base
+
+    def render_with_options(text, options)
+      type = " type=#{options[:attr_wrapper]}text/x-handlebars#{options[:attr_wrapper]}"
+      <<-END
+<script#{type}>
+//<![CDATA[
+  #{text.rstrip.gsub("\n", "\n    ")}
+//]]>
+</script>
+      END
+    end
+  end
+end
+{% endhighlight %}
+
+Now in `haml.rb` I added
+
+{% highlight ruby %}
+# lib/gem_ext/haml.rb
+
+require 'gem_ext/haml/custom_filters'
+{% endhighlight %}
+
+And finally in `gem_ext.rb` I added
+
+{% highlight ruby %}
+# lib/gem_ext.rb
+
+require 'gem_ext/haml'
+{% endhighlight %}
+
+This gives me a very clean approach to extending classes without
+worrying about muddying up the load path with name collisions or other
+surprises. In addition this pattern can
+be repeated for `Core` and `Stdlib` classes in `core_ext` and `stdlib_ext`
+respectively.
+
+#### Using lib/ as a pattern to extracting Rubygems ####
+
+A pattern I have fallen upon when wanting to extract functionality out
+of an app into a Rubygem has been to first extract that code into the
+lib directoy. From there I have a nice way to test the code in
+isolation. I am also forced to write the code as a class independent
+from my app. After I am satisfied with what I have I can think about
+extracting that into an external gem.
+
+A great example of this is something that [Patrick Robertson](http://p-rob.me) wrote for
+[BostonRB](http://bostonrb.org)
+
+We wanted to show the next upcoming event at the top of the website. All
+of our events are stored in a Google Calendar. Unfortunately most of the
+Google Calendar gems out there are crap. Patrick decided to roll his
+own.
+
+You can see that the [boston_rb_calendar.rb](https://github.com/bostonrb/bostonrb/blob/master/lib/boston_rb_calendar.rb)
+is requiring several files just like any Gem would. Because of the
+isolation [he was able to test the class very easily](https://github.com/bostonrb/bostonrb/blob/master/spec/lib/boston_rb_calendar_spec.rb).
+
+From here, if Patrick wanted to release this as a gem it wouldn't take
+too much effort. Some renaming of classes would be required but he has
+all of the major parts in place.
+
+#### Go forth in show some <3<3<3<3 ####
+
+Keeping your code clean pays itself forward in many way. The team you
+are apart of or the team you are handing off to will thank you. Heck,
+your future self might thank you. The patterns I've described here are
+ones that I have found success with. If you have noticed other patterns
+concerning the `lib/` directory please feel free to comment!
