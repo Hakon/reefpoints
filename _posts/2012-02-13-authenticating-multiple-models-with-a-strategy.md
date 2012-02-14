@@ -55,7 +55,7 @@ describe AuthenticationStrategy do
       owner.stubs(:authenticate).returns(owner)
       Owner.stubs(:where).returns([owner])
     end
-    it 'returns a user' do
+    it 'returns an owner' do
       AuthenticationStrategy.run(:email => 'owner@example.com', :password => 'password').should eq owner
     end
   end
@@ -66,7 +66,7 @@ describe AuthenticationStrategy do
       employee.stubs(:authenticate).returns(employee)
       Employee.stubs(:where).returns([employee])
     end
-    it 'returns a user' do
+    it 'returns an employee' do
       AuthenticationStrategy.run(:email => 'employee@example.com', :password => 'password').should eq employee
     end
 
@@ -78,7 +78,7 @@ describe AuthenticationStrategy do
         AuthenticationStrategy.run.should be_nil
       end
     end
-    context 'with no matcher user or employee' do
+    context 'with no match for owner or employee' do
       it 'returns nil' do
         AuthenticationStrategy.run(:email => 'test@example.com', :password => 'password').should be_nil
       end
