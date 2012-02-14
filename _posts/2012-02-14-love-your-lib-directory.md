@@ -7,9 +7,10 @@ twitter: bcardarella
 github: bcardarella
 category: ruby
 social: true
+summary: Patterns for happy hacking
 ---
 
-[Be sure to check out Bryan Helmkamp's blog post on the same topic](http://www.rubyflow.com/items/7166-what-code-goes-in-the-lib-directory)
+[Be sure to check out Bryan Helmkamp's blog post on the same topic](http://blog.codeclimate.com/blog/2012/02/07/what-code-goes-in-the-lib-directory)
 
 The `lib/` directory is the Red Headded Stepchild of your Rails
 application. Let's discuss some conventions for keeping it clean and
@@ -193,7 +194,7 @@ From here, if Patrick wanted to release this as a gem it wouldn't take
 too much effort. Some renaming of classes would be required but he has
 all of the major parts in place.
 
-#### Go forth in show some <3<3<3<3 ####
+#### Go forth and show some <3<3<3<3 ####
 
 Keeping your code clean pays itself forward in many way. The team you
 are apart of or the team you are handing off to will thank you. Heck,
