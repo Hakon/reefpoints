@@ -105,7 +105,7 @@ And finally to clean up the controller
 {% highlight ruby %}
 def create
   if user = AuthenticationStrategy.run(params[:user])
-    session[:user_id] = user.id
+    session[:user_id]    = user.id
     session[:user_class] = user.class
   else
    render :action => :new
