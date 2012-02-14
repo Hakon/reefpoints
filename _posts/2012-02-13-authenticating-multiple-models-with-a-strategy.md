@@ -106,6 +106,7 @@ def create
   if user = AuthenticationStrategy.run(params[:user])
     session[:user_id]    = user.id
     session[:user_class] = user.class
+    redirect_to dashboard_path
   else
    render :action => :new
   end
