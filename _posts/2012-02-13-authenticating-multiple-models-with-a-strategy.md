@@ -115,7 +115,7 @@ end
 
 In the end this may appear to be more work than is necessary. Keep in
 mind that app requirements will expand to support more models. The wins should be obivious
-considering that context. If the requirements grow to 5 or 6 model perhaps at that point it makes sense to
+considering that context. If the requirements grow to 5 or 6 models perhaps at that point it makes sense to
 actually break the authentication up into [Identities](http://en.wikipedia.org/wiki/Identity_management) with a [polymorphic 
 association](http://guides.rubyonrails.org/association_basics.html#polymorphic-associations) to the different models.
 But we'll cross that road when we get there.
