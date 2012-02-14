@@ -6,7 +6,6 @@ author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
 summary: Brian summarizes DockYard's experience thus far with mobile web apps and some of the existing challenges to compete with native
-category: mobile
 social: true
 ---
 
