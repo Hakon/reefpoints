@@ -12,7 +12,7 @@ summary: Patterns for happy hacking
 
 [Be sure to check out Bryan Helmkamp's blog post on the same topic](http://blog.codeclimate.com/blog/2012/02/07/what-code-goes-in-the-lib-directory)
 
-The `lib/` directory is the Red Headded Stepchild of your Rails
+The `lib/` directory is the Red Headed Stepchild of your Rails
 application. Let's discuss some conventions for keeping it clean and
 what should and shouldn't go in there.
 
