@@ -93,8 +93,7 @@ Now it was time to make these specs green! The strategy file goes into
 {% highlight ruby %}
 class AuthenticationStrategy
   def self.run(attributes = nil)
-    return nil if attributes.nil?
-    return nil if (attributes[:email].blank? || attributes[:password].blank?)
+    return nil if (attributes.nil? || attributes[:email].blank? || attributes[:password].blank?)
     Owner.authenticate(attributes) || Employee.authenticate(attributes)
   end
 end
