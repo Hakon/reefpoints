@@ -109,7 +109,6 @@ def create
   else
    render :action => :new
   end
-
 end
 {% endhighlight %}
 
