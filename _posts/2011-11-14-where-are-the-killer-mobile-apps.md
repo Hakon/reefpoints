@@ -5,6 +5,7 @@ comments: true
 author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
+published: false
 ---
 
 Every platform should have the [Killer App](http://en.wikipedia.org/wiki/Killer_application) The [AppleII](http://en.wikipedia.org/wiki/Apple_II) had [VisiCalc](http://en.wikipedia.org/wiki/VisiCalc), 3D accelerated hardware had [Quake](http://en.wikipedia.org/wiki/Quake_(video_game)), and the [XBox](http://en.wikipedia.org/wiki/Xbox) had [Halo](http://en.wikipedia.org/wiki/Halo_(series)) (just some examples of killer apps). Are we to believe that games such as [Angry Birds](http://en.wikipedia.org/wiki/Angry_Birds) and [Fruit Ninja](http://en.wikipedia.org/wiki/Fruit_Ninja) are the **true** Killer Apps for mobile?
