@@ -173,7 +173,7 @@ respectively.
 
 A pattern I have fallen upon when wanting to extract functionality out
 of an app into a Rubygem has been to first extract that code into the
-lib directoy. From there I have a nice way to test the code in
+`lib/` directoy. From there I have a nice way to test the code in
 isolation. I am also forced to write the code as a class independent
 from my app. After I am satisfied with what I have I can think about
 extracting that into an external gem.
