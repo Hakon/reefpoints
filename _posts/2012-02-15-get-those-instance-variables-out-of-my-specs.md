@@ -10,8 +10,8 @@ social: true
 summary: Clean up your specs with let and subject
 ---
 
-If you're been writing [RSpec](https://www.relishapp.com/rspec) for any
-period of time I'm sure you've come across [let](https://www.relishapp.com/rspec/rspec-core/v/2-8/docs/helper-methods/let-and-let) and [subject](https://www.relishapp.com/rspec/rspec-core/v/2-8/docs/subject/explicit-subject). (please take a moment to check out the links if you have no idea what I'm talking about) In most cases you get effectively have the same specs with instance variables. For example:
+If you've been writing [RSpec](https://www.relishapp.com/rspec) for any
+period of time I'm sure you've come across [let](https://www.relishapp.com/rspec/rspec-core/v/2-8/docs/helper-methods/let-and-let) and [subject](https://www.relishapp.com/rspec/rspec-core/v/2-8/docs/subject/explicit-subject). (please take a moment to check out the links if you have no idea what I'm talking about) In most cases you can write the same specs with instance variables. For example:
 
 {% highlight ruby %}
 describe '.find_good_cars' do
