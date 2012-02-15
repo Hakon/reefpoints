@@ -34,8 +34,8 @@ Here is what it looks like when using `let` and `subject`
 describe '.find_good_cars' do
   let!(:car_1) { Factory(:good_car) }
   let!(:car_2) { Factory(:good_car) }
-  let!(:car_3) { Factory(:bad_car) }
-  subject { Car }
+  let!(:car_3) { Factory(:bad_car)  }
+  subject      { Car }
   its(:find_good_cars) { should eq [car_1, car_2] }
 end
 {% endhighlight %}
