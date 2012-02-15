@@ -41,4 +41,4 @@ end
 {% endhighlight %}
 
 Maybe it is just me but this *feels* cleaner. I'm treating instance
-varialbes in my specs as a code smell from now on.
+varialbes in my specs as a smell from now on.
