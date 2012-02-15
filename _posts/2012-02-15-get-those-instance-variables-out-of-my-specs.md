@@ -40,5 +40,5 @@ describe '.find_good_cars' do
 end
 {% endhighlight %}
 
-Maybe it is just me but this *feels* cleaner. I'm treating instance
-varialbes in my specs as a smell from now on.
+Maybe it is just me but this *feels* cleaner. I treat instance
+varialbes in my specs as a smell and you should too.
