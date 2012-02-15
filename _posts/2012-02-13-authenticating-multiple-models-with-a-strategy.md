@@ -36,6 +36,7 @@ chose the [Strategy Pattern](http://en.wikipedia.org/wiki/Strategy_pattern) to h
 I like putting all of my strategies into
 `app/strategies`. This required me to add this directory to the Rails
 `autoload_paths`. Simply open up `config/application.rb`
+(not necessary in Rails 3.1+, thanks Artur Roszczyk)
 
 {% highlight ruby %}
 config.autoload_paths += %W(#{config.root}/app/strategies)
