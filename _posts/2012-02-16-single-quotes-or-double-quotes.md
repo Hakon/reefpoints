@@ -49,6 +49,8 @@ I try to follow this rule. I don't think it saves anything other than it
 just looks nicer to me. A very simple (and completely unscientific)
 benchmark shows that the difference between the two is a wash
 
+** These benchmarks may be wrong, please see the comments for more information **
+
 {% highlight ruby %}
 require 'benchmark'
 
