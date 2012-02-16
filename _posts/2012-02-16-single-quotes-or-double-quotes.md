@@ -8,6 +8,7 @@ github: bcardarella
 category: ruby
 social: true
 summary: An opinion on when to use the different quoting styles with some performance notes
+published: false
 ---
 
 I have a simple rule when it comes to strings: I always start out with
