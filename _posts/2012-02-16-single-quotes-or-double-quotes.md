@@ -7,10 +7,10 @@ twitter: bcardarella
 github: bcardarella
 category: ruby
 social: true
-summary: A styling opinion on when to use what quoting style with some performance notes
+summary: An opinion on when to use the different quoting styles with some performance notes
 ---
 
-I have a simple rule when it comes to string I always start out with
+I have a simple rule when it comes to strings: I always start out with
 single quotes
 
 {% highlight ruby %}
@@ -36,7 +36,7 @@ are contained withing a non-alphanumeric delimiter.
 
 {% highlight ruby %}
 # single quote
-%q{Brian's world!}
+%q{Wayne's world!}
 
 # double quote
 %Q{#{name}'s world!}
@@ -60,17 +60,16 @@ Benchmark.measure { 1..10_000_000.times { a = "hey now" } }
 {% endhighlight %}
 
 Any given run of this and the times would flip. The string is probably
-just being optimized somewhere and we're seeing those numbers so this
-test is not very good. But at the very least it shows that execution
-time is similar... unless we're interpolating:
+just being optimized somewhere so this test is not very good. But at the 
+very least it shows that execution time is similar... unless we're interpolating:
 
 {% highlight ruby %}
 Benchmark.measure { 1..10_000_000.times { |i| a = "hey now #{i}" } }
 # =>   6.110000   0.010000   6.120000 (  6.111669)
 {% endhighlight %}
 
-Now we can see a significant jump in time. (over 3 times longer) But why does this take so much longer?
-To help answer this question we need to compare this benchmark to string concatenation using single quotes?
+Now we can see a significant jump in time. (over 3 times longer) Why does this take so much longer?
+To help answer this question we need to first compare this benchmark to string concatenation using single quotes
 
 {% highlight ruby %}
 Benchmark.measure { 1..10_000_000.times { |i| a = 'hey now ' + i.to_s } }
@@ -78,8 +77,7 @@ Benchmark.measure { 1..10_000_000.times { |i| a = 'hey now ' + i.to_s } }
 {% endhighlight %}
 
 This ends up be about the same execution time as string interpolation.
-But before we answer the question of why this is so much slower let's
-take a look at one more option
+Before we answer the previous question let's take a look at one more option
 
 {% highlight ruby %}
 require 'benchmark'
@@ -89,7 +87,7 @@ Benchmark.measure { 1..10_000_000.times { |i| a = 'hey now ' << i } }
 {% endhighlight %}
 
 Whoa, this is much faster, more than 50% faster than interpolation and
-concatenation. But why? What is happening here?
+concatenation. Why? What is happening here?
 
 What we are seeing is the difference between creating a new object and
 modifying an existing object. It is not immediately obvious with string
