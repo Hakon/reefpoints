@@ -29,7 +29,7 @@ is time to upgrade to double quotes
 Now what happens when the string style is part of that string itself?
 For example, I don't need to interpolate and the only escaped character
 needed is a single quote. This is when I've been using [string
-expressions](http://web.njit.edu/all_topics/Prog_Lang_Docs/html/ruby/syntax.html#string)
+expressions](http://web.njit.edu/all_topics/Prog_Lang_Docs/html/ruby/syntax.html#string).
 A string literal of `%q` is the equivalent of a single quote string and
 a `%Q` is the equivalent of a double quote string. The string literals
 are contained withing a non-alphanumeric delimiter.
@@ -62,8 +62,9 @@ Benchmark.measure { 1..10_000_000.times { a = "hey now" } }
 {% endhighlight %}
 
 Any given run of this and the times would flip. The string is probably
-just being optimized somewhere so this test is not very good. But at the 
-very least it shows that execution time is similar... unless we're interpolating:
+just being optimized somewhere so this benchmark is not very good. At the 
+very least it shows that execution time is similar. Let's see what happens 
+when interpolating:
 
 {% highlight ruby %}
 Benchmark.measure { 1..10_000_000.times { |i| a = "hey now #{i}" } }
@@ -71,14 +72,14 @@ Benchmark.measure { 1..10_000_000.times { |i| a = "hey now #{i}" } }
 {% endhighlight %}
 
 Now we can see a significant jump in time. (over 3 times longer) Why does this take so much longer?
-To help answer this question we need to first compare this benchmark to string concatenation using single quotes
+A clue as to what is happening can be seen when we compare this benchmark to string concatenation using single quotes
 
 {% highlight ruby %}
 Benchmark.measure { 1..10_000_000.times { |i| a = 'hey now ' + i.to_s } }
 # =>   6.490000   0.020000   6.510000 (  6.502408)
 {% endhighlight %}
 
-This ends up be about the same execution time as string interpolation.
+This ends up being about the same execution time as string interpolation.
 Before we answer the previous question let's take a look at one more option
 
 {% highlight ruby %}
