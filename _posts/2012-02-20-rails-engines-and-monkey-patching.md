@@ -8,7 +8,6 @@ github: bcardarella
 category: ruby
 social: true
 summary: A simple pattern for extending your Rails Engines in your app
-published: false
 ---
 
 We've started extracting simple behavior into Rails Engines lately. An
@@ -161,3 +160,30 @@ Nice and clean!
 
 This simple pattern can be applied to the controllers, mailers, etc... any class you want to actually
 extend from the engine instead of overwrite entirely.
+
+Finally, I'd like the address a question I'm sure some of you have. Why
+not subclass? For this engine the `Invitable::InvitationsController` is
+expecting a class of `Invitation` within the context of the `Invitable`
+module. So if I were to subclass
+
+{% highlight ruby %}
+class Inivtation < Inivitable::Invitation
+{% endhighlight %}
+
+You would then have to subclass the controller
+
+{% highlight ruby %}
+class InvitationsController < Invitable::InvitationsController
+{% endhighlight %}
+
+And because the `InvitationsController` is referencing
+`InvitationMailer` within the context of the `Invitable` module you
+would have to subclass the mailer
+
+{% highlight ruby %}
+class InvitationMailer < Invitable::InvitationMailer
+{% endhighlight %}
+
+Finally, because you've subclassed the controller the mount in
+`routes.rb` becomes meaningless. If you head down the subclass path you
+defeat the purpose of using the engine in the first place.
