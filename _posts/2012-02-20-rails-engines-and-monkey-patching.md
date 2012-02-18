@@ -25,7 +25,10 @@ building requires two additional attributes to be gathered: `name` and `zipcode`
 There is no need to overwrite the model, I just want to extend it. The cleanest 
 thing to do is just monkey patch it.
 
-Let's start with writing the spec of where I want the model to be
+Let's start with writing the spec of where I want the model to be (I am
+using [ValidAttribute](https://github.com/bcardarella/valid_attribute) if
+the specs don't look familiar, I suggest you try it test spec your
+validations)
 
 {% highlight ruby %}
 require 'spec_helper'
@@ -81,6 +84,80 @@ module Invitable
 end
 {% endhighlight %}
 
-It's verbose but it works. This simple pattern can be applied
-to the controllers, mailers, etc... any class you want to actually
+It's verbose and this could be better so let's clean that up.
+
+In my engine I've added a spec to `spec/lib/invitable/engine_spec.rb`
+with the following (I'm using [Mocha](https://github.com/floehopper/mocha) for the stubbing)
+
+{% highlight ruby %}
+require 'spec_helper'
+
+describe Invitable::Engine do
+  before { Invitable::Engine.stubs(:called_from).returns('/lib/invitable') }
+
+  describe '.app_path' do
+    it 'returns the path to the engine app directory' do
+      Invitable::Engine.app_path.should eq '/app'
+    end
+  end
+
+  describe 'controller_path' do
+    it 'returns the path to the named engine controller' do
+      Invitable::Engine.controller_path(:test_controller).should eq '/app/controllers/invitable/test_controller.rb'
+    end
+  end
+
+  describe 'helper_path' do
+    it 'returns the path to the named engine helper' do
+      Invitable::Engine.helper_path(:test_helper).should eq '/app/helpers/invitable/test_helper.rb'
+    end
+  end
+
+  describe 'mailer_path' do
+    it 'returns the path to the named engine mailer' do
+      Invitable::Engine.mailer_path(:test_mailer).should eq '/app/mailers/invitable/test_mailer.rb'
+    end
+  end
+
+  describe 'model_path' do
+    it 'returns the path to the named engine model' do
+      Invitable::Engine.model_path(:test_model).should eq '/app/models/invitable/test_model.rb'
+    end
+  end
+end
+{% endhighlight %}
+
+This looks good enough to me. Now to make it green I added the following
+to `lib/invitable/engine.rb`
+
+{% highlight ruby %}
+def self.app_path
+  File.expand_path('../../app', called_from)
+end
+
+%w{controller helper mailer model}.each do |resource|
+  class_eval <<-RUBY
+    def self.#{resource}_path(name)
+      File.expand_path("#{resource.pluralize}/invitable/\#{name}.rb", app_path)
+    end
+  RUBY
+end
+{% endhighlight %}
+
+And now in the app model I can do the following
+
+{% highlight ruby %}
+require Inivitable::Engine.model_path :invitation
+
+module Invitable
+  class Invitation
+    validates :name, :zipcode, :presence => true
+    validates :zipcode, :format => /^\d{5}$|^\d{5}-\d{4}$/
+  end
+end
+{% endhighlight %}
+
+Nice and clean!
+
+This simple pattern can be applied to the controllers, mailers, etc... any class you want to actually
 extend from the engine instead of overwrite entirely.
