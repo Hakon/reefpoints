@@ -5,7 +5,7 @@ comments: true
 author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
-summary: DockYard welcomes Russ Jones as a partner
+summary: DockYard welcomes Dan Seaver
 category: announcement
 ---
 
