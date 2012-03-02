@@ -178,10 +178,23 @@ section#post aside h2 {
   font-weight: normal;
 }
 
-section#post aside .hire-us {
+section#post aside .hire-us a {
   padding: 10px;
+  display: block;
   position: relative;
+  border-radius: 5px;
   background: #2A5568;
+  text-shadow: 0 0 1px rgba(0,0,0,.25);
+  background-image: -webkit-linear-gradient(top, #4A7588, #2A5568);
+}
+
+section#post aside .hire-us a:hover {
+  background-image: -webkit-linear-gradient(top, #5A8598, #3A6578);
+}
+
+section#post aside .hire-us a:active {
+  box-shadow: 0 0 20px rgba(0,0,0,.5) inset;
+  background-image: -webkit-linear-gradient(top, #4A7588, #2A5568);
 }
 
 section#post aside .hire-us a {
@@ -200,6 +213,7 @@ section#post aside .hire-us a em {
   color: #FFF;
   font-size: 2em;
   position: absolute;
+  text-shadow: 0 0 5px rgba(0,0,0,.5);
 }
 
 section#post article {
