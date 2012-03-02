@@ -84,7 +84,7 @@ header {
     background: #FFF;
 }
 header section {
-    width: 960px;
+    width: 980px;
     margin: 0 auto;
     padding: 20px 0;
     overflow: hidden;
@@ -127,7 +127,7 @@ section section {
     padding: 0;
 }
 section section section {
-    width: 960px;
+    width: 980px;
     margin: 0 auto;
     padding: 20px 0;
     overflow: hidden;
@@ -353,7 +353,7 @@ footer {
     background: rgba(255, 255, 255, 0.25);
 }
 footer section {
-    width: 960px;
+    width: 980px;
     overflow: hidden;
     margin: 0 auto;
     background: none;
