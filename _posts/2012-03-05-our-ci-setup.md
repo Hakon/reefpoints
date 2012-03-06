@@ -5,7 +5,7 @@ comments: true
 author: Dan Seaver
 twitter: dan_seaver
 github: danseaver
-category: ruby ci jenkins
+category: ruby
 social: true
 summary: "What we are doing to keep our developers honest with their tests"
 published: true
