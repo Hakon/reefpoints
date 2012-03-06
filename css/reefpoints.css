@@ -214,6 +214,23 @@ section#post aside .hire-us a em {
   font-size: 2em;
   position: absolute;
   text-shadow: 0 0 5px rgba(0,0,0,.5);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+section#post aside .hire-us.active a em {
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+   transform: rotate(90deg);
+}
+
+section#post aside section#form-container {
+  display: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 section#post article {
@@ -316,4 +333,9 @@ form.inFieldLabel label.inFieldLabel {
 
 form.inFieldLabel label.inFieldLabel.behind {
   z-index: -100 !important;
+}
+
+iframe {
+  height: 460px
+  width: 420px;
 }
