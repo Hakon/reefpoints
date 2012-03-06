@@ -3,26 +3,43 @@ layout: default
 ---
 
 <section id="post">
-  <article>
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.date | date_to_string }}</h2>
-    {% if page.author %}
-      <h4>by {{ page.author }}</h4>
-    {% endif %}
-    {{ content }}
-      {% if page.social %}
-        <p class="social">
-          Follow {{ page.author }}
-          {% if page.twitter %}
-            <a href="http://twitter.com/{{ page.twitter }}">Twitter</a>
-          {% endif %}
-          {% if page.github %}
-            <a href="http://github.com/{{ page.github }}">Github</a>
-          {% endif %}
-        </p>
-        <p class="social"><a href="http://twitter.com/dockyard" target="_blank">Follow DockYard on Twitter</a><p>
-      {% endif %}
-  </article>
+  
+  <section class="wrapper">
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
+
+    <article>
+      {{ content }}
+    </article>
+
+    <aside>
+      <ul class="meta">
+        {% if page.author %}
+          <li class="author">
+            By: {{ page.author }}
+            {% if page.social %}
+              <span class="social">
+                {% if page.twitter %}
+                  <a class="twitter" href="http://twitter.com/{{ page.twitter }}">Twitter</a>
+                {% endif %}
+                {% if page.github %}
+                  <a class="github" href="http://github.com/{{ page.twitter }}">Github</a>
+                {% endif %}
+              </span>
+            {% endif %}
+          </li>
+        {% endif %}
+        <li class="date">{{ page.date | date_to_string }}</li>
+      </ul>
+      
+      <h2 class="hire-us"><a href="#">We make mobile &amp; web apps.<span>You should hire us.</span><em id="arrow">&#9654;</em></a></h2>
+      <section id="form-container">
+        <iframe src="http://dockyard.com/contact_enquiry" height="460" width="420"></iframe>
+       </section>
+    </aside>
+  </section>
+>>>>>>> angelo-sidebar
 </section>
 
 <section id="comments">
@@ -39,4 +56,3 @@ layout: default
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   {% endif %}
 </section>
-

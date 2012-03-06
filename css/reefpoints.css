@@ -38,8 +38,15 @@ header section header h2 a:hover {
 
 /* content */
 
-section#posts, section#post, section#comments {
-  width: 960px;
+section.wrapper {
+  width: 980px;
+  margin: 0 auto;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+section#posts, section#comments {
+  width: 980px;
   margin: 0 auto;
   overflow: hidden;
   padding: 20px 0px;
@@ -62,13 +69,12 @@ section#social p a {
   font-weight: bold;
 }
 
-div.highlight {
+.highlight {
   padding: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
   overflow-x: scroll;
+  margin: 0 0 20px 0;
+  border-radius: 4px;
+  border: 1px solid #aaa;
 }
 
 div.highlight pre {
@@ -79,10 +85,8 @@ pre, code {
 }
 
 section article {
-  margin: 0 0 21px 0;
-  padding: 0 0 0px 0;
-  border-bottom: 1px dashed #4A7588;
-  min-height: 85px;
+  margin: 0;
+  padding: 0;
 }
 
 section article:last-child {
@@ -114,10 +118,6 @@ blockquote {
   font-style: italic;
 }
 
-p {
-  margin-top: 20px;
-}
-
 section article header {
   background: none;
 }
@@ -147,14 +147,129 @@ section#posts article header h4 a {
   color: #4A7588;
 }
 
-section article header h2, section#posts article p {
-  width: 800px;
+h5 {
+  color: #4A7588;
+  font-size: 25px;
+  font-family: league-gothic, sans-serif;
 }
 
-h5 {
-  font-family: league-gothic, sans-serif;
-  font-size: 25px;
-  color: #4A7588;
+section#post {
+  width: auto;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+section#post header {
+  background: none;
+}
+
+section#post header h1 {
+  float: none;
+  font-size: 48px;
+}
+
+section#post aside {
+  float: left;
+  width: 367px;
+  margin: 0 0 0 20px;
+}
+
+section#post aside h2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+section#post aside .hire-us a {
+  padding: 10px;
+  display: block;
+  position: relative;
+  border-radius: 5px;
+  background: #2A5568;
+  text-shadow: 0 0 1px rgba(0,0,0,.25);
+  background-image: -webkit-linear-gradient(top, #4A7588, #2A5568);
+}
+
+section#post aside .hire-us a:hover {
+  background-image: -webkit-linear-gradient(top, #5A8598, #3A6578);
+}
+
+section#post aside .hire-us a:active {
+  box-shadow: 0 0 20px rgba(0,0,0,.5) inset;
+  background-image: -webkit-linear-gradient(top, #4A7588, #2A5568);
+}
+
+section#post aside .hire-us a {
+  color: #8AB5C8;
+  text-decoration: none;
+}
+
+section#post aside .hire-us a span {
+  color: #FFF;
+  display: block;
+}
+
+section#post aside .hire-us a em {
+  top: 35%;
+  right: 3%;
+  color: #FFF;
+  font-size: 2em;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0,0,0,.5);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+section#post aside .hire-us.active a em {
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+   transform: rotate(90deg);
+}
+
+section#post aside section#form-container {
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+section#post article {
+  float: left;
+  width: 593px;
+}
+
+section#post aside ul.meta {
+  float: none;
+  padding: 10px;
+  color: #2A5568;
+  line-height: 2;
+  font-size: 16px;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+  background: #CFE5E4;
+}
+
+section#post aside ul.meta .author {
+  float: left;
+}
+
+.social a {
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.social .twitter {
+  background: url(/images/icons/twitter.png) 0 0 no-repeat;
+}
+
+.social .github {
+  background: url(/images/icons/github.png) 0 0 no-repeat;
+}
+
+section#post aside ul.meta .date {
+  float: right;
 }
 
 section#post article ul {
@@ -167,3 +282,60 @@ ol {
   margin-left: 10px;
 }
 
+form {
+  width: 327px;
+  padding: 20px;
+  background: #CFE5E4;
+}
+
+form .error {
+  width: auto;
+  color: #FFF;
+  height: 28px;
+  display: block;
+  padding: 2px 5px;
+  text-align: left;
+  line-height: 28px;
+  background: #BA4F3A;
+}
+
+input,
+textarea {
+  margin: 0;
+  width: 317px;
+  border: none;
+  display: block;
+}
+
+.input {
+  margin: 0 0 10px 0;
+}
+
+.submit input {
+  color: #FFF;
+  width: 327px;
+  font-size: 16px;
+  background: #BA4F3A;
+  border: 4px solid #FFF;
+  text-transform: uppercase;
+  font-family: ff-meta-web-pro, sans-serif;
+}
+
+/* jquery in field label  */
+
+form.inFieldLabel label {
+  display: none;
+}
+
+form.inFieldLabel label.inFieldLabel {
+  z-index: 100;
+}
+
+form.inFieldLabel label.inFieldLabel.behind {
+  z-index: -100 !important;
+}
+
+iframe {
+  height: 460px
+  width: 420px;
+}
