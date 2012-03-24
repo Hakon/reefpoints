@@ -8,7 +8,6 @@ github: bcardarella
 category: ruby
 social: true
 summary: A simple pattern for extending your Rails Engines in your app
-published: false
 ---
 
 We've started extracting simple behavior into Rails Engines lately. An
