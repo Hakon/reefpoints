@@ -8,7 +8,6 @@ github: codeofficer
 summary: Russ lays down a use case for ActiveRecord association extensions
 category: ruby
 social: true
-published: false
 ---
 
 It's common in Rails to use a `has_many :through` relationship to model User/Group Memberships. 
