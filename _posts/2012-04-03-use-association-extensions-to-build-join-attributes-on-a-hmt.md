@@ -11,7 +11,7 @@ social: true
 published: false
 ---
 
-It's common in Rails to use a has_many :through relationship to model User/Group Memberships. 
+It's common in Rails to use a `has_many :through` relationship to model User/Group Memberships. 
 Sometimes we have extra data in the join that we would like to make use of, but getting that 
 data in there can be combersome depending on our approach. For example, given the
 following diagram and schema:
@@ -69,6 +69,7 @@ There's a better way to pull this off ...
 And this is how it's done ...
 
 {% highlight ruby %}
+# User model
 class User < ActiveRecord::Base
   has_many :memberships
   has_many :groups, :through => :memberships
@@ -81,12 +82,18 @@ class User < ActiveRecord::Base
     memberships.where(:role => 'editor').first
   end
 end
+{% endhighlight %}
 
+{% highlight ruby %}
+# Membership model
 class Membership < ActiveRecord::Base
   belongs_to :group
   belongs_to :user
 end
+{% endhighlight %}
 
+{% highlight ruby %}
+# Group model
 class Group < ActiveRecord::Base
   has_many :memberships
   has_many :users, :through => :memberships
@@ -107,8 +114,8 @@ class Group < ActiveRecord::Base
 end
 {% endhighlight %}
 
-We're defining an extension on our group's has_many association which overrides
-the << method on that collection. We then tell the proxy association's owner
+We're defining an extension on our group's `has_many` association which overrides
+the `<<` method on that collection. We then tell the proxy association's owner
 (which is our group object) to create the user/group join record, but with an additional
 role assignment of 'admin'.
 
@@ -160,6 +167,3 @@ class GroupTest < ActiveSupport::TestCase
   end
 end
 {% endhighlight %}
-
-
-
