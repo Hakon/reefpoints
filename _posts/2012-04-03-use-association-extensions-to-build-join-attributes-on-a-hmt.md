@@ -121,7 +121,7 @@ role assignment of 'admin'.
 @user.editor? # => false
 {% endhighlight %}
 
-Pretty exporessive really. Thanks to ActiveRecord magic!
+Pretty expressive, thanks to ActiveRecord!
 
 {% highlight ruby %}
 require 'test_helper'
