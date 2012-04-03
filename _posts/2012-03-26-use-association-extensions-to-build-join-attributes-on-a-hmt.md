@@ -11,6 +11,13 @@ social: true
 published: false
 ---
 
+It's common in Rails to use a has_many :through relationship to model User/Group Memberships. 
+Sometimes we have extra data in the join that we would like to make use of, but getting that 
+data in there can be combersome depending on our approach. For example, given the
+following diagram and schema:
+
+![Diagram](/images/russ/yuml-cb495048.png)
+
 {% highlight ruby %}
 ActiveRecord::Schema.define(:version => 20120324170519) do
 
@@ -37,10 +44,42 @@ ActiveRecord::Schema.define(:version => 20120324170519) do
 end
 {% endhighlight %}
 
+We might deal directly with the join table to assign our additonal data.
+
+{% highlight ruby %}
+@user = User.create(name: 'User 1')
+@user = Group.create(name: 'Group 1')
+@membership = Membership.create do |m|
+  m.user = @user
+  m.group = @group
+  m.role = 'admin'
+end
+@user.admin? #=> true
+@user.editor? #=> false
+{% endhighlight %}
+
+There's a better way to pull this off ...
+
+{% highlight ruby %}
+@group.admins << @user
+@user.admin? #=> true
+@user.editor? #=> false
+{% endhighlight %}
+
+And this is how it's done ...
+
 {% highlight ruby %}
 class User < ActiveRecord::Base
   has_many :memberships
   has_many :groups, :through => :memberships
+
+  def admin?
+    memberships.where(:role => 'admin').first
+  end
+
+  def editor?
+    memberships.where(:role => 'editor').first
+  end
 end
 
 class Membership < ActiveRecord::Base
@@ -67,6 +106,19 @@ class Group < ActiveRecord::Base
   end
 end
 {% endhighlight %}
+
+We're defining an extension on our group's has_many association which overrides
+the << method on that collection. We then tell the proxy association's owner
+(which is our group object) to create the user/group join record, but with an additional
+role assignment of 'admin'.
+
+{% highlight ruby %}
+@group.admins << @user
+@user.admin? #=> true
+@user.editor? #=> false
+{% endhighlight %}
+
+Pretty exporessive really. Thanks to ActiveRecord magic!
 
 {% highlight ruby %}
 require 'test_helper'
