@@ -8,7 +8,6 @@ github: codeofficer
 summary: Russ lays down a use case for ActiveRecord association extensions
 category: ruby
 social: true
-published: true
 ---
 
 It's common in Rails to use a `has_many :through` relationship to model User/Group Memberships. 
@@ -62,14 +61,13 @@ There's a better way to pull this off ...
 
 {% highlight ruby %}
 @group.admins << @user
-@user.admin? #=> true
-@user.editor? #=> false
+@user.admin? # => true
+@user.editor? # => false
 {% endhighlight %}
 
 And this is how it's done ...
 
 {% highlight ruby %}
-# User model
 class User < ActiveRecord::Base
   has_many :memberships
   has_many :groups, :through => :memberships
@@ -85,7 +83,6 @@ end
 {% endhighlight %}
 
 {% highlight ruby %}
-# Membership model
 class Membership < ActiveRecord::Base
   belongs_to :group
   belongs_to :user
@@ -93,7 +90,6 @@ end
 {% endhighlight %}
 
 {% highlight ruby %}
-# Group model
 class Group < ActiveRecord::Base
   has_many :memberships
   has_many :users, :through => :memberships
@@ -121,8 +117,8 @@ role assignment of 'admin'.
 
 {% highlight ruby %}
 @group.admins << @user
-@user.admin? #=> true
-@user.editor? #=> false
+@user.admin? # => true
+@user.editor? # => false
 {% endhighlight %}
 
 Pretty exporessive really. Thanks to ActiveRecord magic!
