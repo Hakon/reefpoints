@@ -19,7 +19,6 @@ following diagram and schema:
 
 {% highlight ruby %}
 ActiveRecord::Schema.define(:version => 20120324170519) do
-
   create_table "groups", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
@@ -39,7 +38,6 @@ ActiveRecord::Schema.define(:version => 20120324170519) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
-
 end
 {% endhighlight %}
 
