@@ -51,8 +51,8 @@ We might deal directly with the join table to assign our additonal data.
   m.group = @group
   m.role = 'admin'
 end
-@user.admin? #=> true
-@user.editor? #=> false
+@user.admin? # => true
+@user.editor? # => false
 {% endhighlight %}
 
 There's a better way to pull this off ...
