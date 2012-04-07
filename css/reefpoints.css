@@ -45,11 +45,15 @@ section.wrapper {
   overflow: hidden;
 }
 
-section#posts, section#comments {
+section#posts, section#comments, section#share {
   width: 980px;
   margin: 0 auto;
   overflow: hidden;
   padding: 20px 0px;
+}
+
+.social-button {
+  float: left;
 }
 
 section#posts {
