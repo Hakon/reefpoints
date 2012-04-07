@@ -31,7 +31,11 @@
     })();
   //]]>
 </script>
-<meta content='DockYard is a web and mobile software development consultancy for hire based in Boston, MA' name='description'>
+{% if page %}
+  <meta content='DockYard.com - {{ page.summary }}' name='description'>
+{% else %}
+  <meta content='DockYard is a web and mobile software development consultancy for hire based in Boston, MA' name='description'>
+{% endif %}
 <meta content='web development, mobile development, startups, enterprise, ruby on rails, rails, ruby, ruby on rails training, Boston, for hire' name='keywords'>
 <link href='http://dockyard.com/humans.txt' rel='author'>
 </head>
