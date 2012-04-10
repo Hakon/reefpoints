@@ -13,9 +13,9 @@ published: true
 
 ## Screen - the gateway drug ##
 
-I had been using screen for a while to multiplex my terminal when
-working on Ruby projects.  I would have a tab for git (was using
-MacVim), on for `rails s`/`tail
+I had been using [screen](http://www.gnu.org/software/screen) for a while to multiplex my terminal when
+working on Ruby projects.  I would have a tab for
+[git](http://git-scm.org) (was using [MacVim](http://code.google.com/p/macvim/)), on for `rails s` or `tail
 log/development.log`, one for running tests (now using `guard` or
 `autotest`), one for `rails c` and lastly one for `rails db`. Detaching
 from a screen session allowed me to have a full environment running
@@ -37,19 +37,18 @@ features.
 
 ## Tmux and Brian P. Hogan's 'tmux' book ##
 
-I had noticed that tmux was getting a decent amount of attention, so
+I had noticed that [tmux](http://tmux.sourceforge.net) was getting a decent amount of attention, so
 when I started at DockYard, I told myself I would only use tmux.  I also
 switched from MacVim to terminal vim, which works better when pair
-programming.  [Brian P. Hogan](http://www.bphogan.com/) recently wrote
-_tmux_ for Pragmatic Programmers.  After reading his book, I have a
-solid `.tmux.conf` and a great understanding of tmux.
+programming.  [Brian P. Hogan](http://www.bphogan.com) recently wrote
+[tmux: Productive Mouse-Free Development](http://pragprog.com/book/bhtmux/tmux) for Pragmatic Programmers.  After reading his book, I have a solid `.tmux.conf` and a great understanding of tmux.
 
 ## Tmux and Pair Programming ##
 
 The one disadvantage of everyone at DockYard working remotely is that you can't
 just turn around and ask someone to come to your desk to pair up. Tmux
-allows multiple user to connect to a specific session.  With a bit of
-dynamic DNS magic, port forwarding, and ssh tunneling, multiple people
+allows multiple users to connect to a specific session.  With a bit of
+[dynamic DNS](http://en.wikipedia.org/wiki/Dynamic_DNS) magic, port forwarding, and ssh tunneling, multiple people
 can connect to the same tmux session, work in the same vim window, and
 see the same development server.
 
@@ -64,7 +63,7 @@ We use the following ssh command to forward connection on our local
 machine to the other person's
 
 ```
-    ssh dan.example.com -L 3000:127.0.0.1:3000
+ssh dan.example.com -L 3000:127.0.0.1:3000
 ```
 
 The above command forwards any request on port 3000 on my machine the
