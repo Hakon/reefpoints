@@ -8,7 +8,6 @@ github: codeofficer
 category: javascript
 social: true
 summary: "Throwing them together in a way that makes sense."
-published: false
 ---
 
 I often meet Rails developers that have unwittingly jumped on the unobtrusive javascript bandwagon. 
