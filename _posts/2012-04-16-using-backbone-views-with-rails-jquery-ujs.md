@@ -11,11 +11,13 @@ summary: "Throwing them together in a way that makes sense."
 published: false
 ---
 
-I often meet Rails developers that have unwittingly jumped on the unobtrusive javascript bandwagon. They throw ':remote => true' on a form and benefit from its conventions, but don't know how to make it really work for them. They're probably still inclined to write out procedural jQuery code the same way they were doing it before [jquery-ujs](https://github.com/rails/jquery-ujs
-) became popular. There's a helpful [wiki page](https://github.com/rails/jquery-ujs/wiki/ajax
-) that describes its custom events and how to use them, but they probably don't know about it.
+I often meet Rails developers that have unwittingly jumped on the unobtrusive javascript bandwagon. 
+They throw ':remote => true' on a form and benefit from its conventions, but don't know how to make it really work for them. 
+They're probably still inclined to write out procedural jQuery code the same way they were doing it before [jquery-ujs](https://github.com/rails/jquery-ujs) became popular. 
+There's a helpful [wiki page](https://github.com/rails/jquery-ujs/wiki/ajax) that describes its custom events and how to use them, but they probably don't know about it.
 
-Maybe they've worked on improving some client side code with Backbone recently, and maybe they're trying to do things the Backbone way but don't know how to tie that together with existing Rails views. Here's a quick example of how Backbone views can listen for jquery-ujs custom events. You can view a working fiddle [here](http://jsfiddle.net/codeofficer/mpyXT/).
+Maybe they've worked on improving some client side code with Backbone recently, and maybe they're trying to do things the Backbone way but don't know how to tie that together with existing Rails views. 
+Here's a quick example of how Backbone views can listen for jquery-ujs custom events. You can view a working fiddle [here](http://jsfiddle.net/codeofficer/mpyXT/).
 
 {% highlight javascript %}
 var FormView = Backbone.View.extend({
