@@ -2,9 +2,9 @@
 layout: post
 title: "Tmux, for fun and profit"
 comments: true
-author: Dan Seaver
-twitter: dan_seaver
-github: danseaver
+author: Dan McClain
+twitter: _danmcclain
+github: danmcclain
 category: ruby
 social: true
 summary: "Pair programming at distance"
