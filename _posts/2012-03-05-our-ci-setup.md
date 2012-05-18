@@ -2,9 +2,9 @@
 layout: post
 title: "Our Continuous Integration Setup"
 comments: true
-author: Dan Seaver
-twitter: dan_seaver
-github: danseaver
+author: Dan McClain
+twitter: _danmcclain
+github: danmcclain
 category: ruby
 social: true
 summary: "What we are doing to keep our developers honest with their tests"
