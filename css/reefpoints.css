@@ -458,6 +458,7 @@ and (max-width : 480px) {
     box-shadow: 0 0 10px rgba(0,0,0,.1) inset;
   }
   
+  section#share,
   section#comments,
   section#content > section#posts {
     padding: 20px;
