@@ -98,6 +98,16 @@ section article:last-child {
   border: none;
 }
 
+section#posts article {
+  padding: 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+section#posts article p {
+  max-width: 480px;
+}
+
 section#posts li a {
   margin-left: 20px;
   font-size: 1.25em;
@@ -145,6 +155,7 @@ section#posts article header h4 {
   text-transform: lowercase;
   font-family: league-gothic, sans-serif;
   margin: 0px;
+  opacity: .6;
 }
 
 section#posts article header h4 a {
@@ -342,4 +353,199 @@ form.inFieldLabel label.inFieldLabel.behind {
 iframe {
   height: 460px
   width: 420px;
+}
+
+header .mobile-nav {
+  display: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+
+  section article header time,
+  section#posts article header h4 {
+    margin: 0;
+    padding: 0;
+    opacity: .8;
+    float: none;
+    font-size: 20px;
+  }
+  
+  h2 {
+    margin: 10px 0;
+  }
+  
+  section,
+  header section {
+    width: auto !important;
+  }
+
+  header section header {
+    width: auto;
+  }
+
+  header section header h1 {
+    font-size: 48px;    
+    text-align: left;
+  }
+
+  header section header h1:after {
+    float: right;
+    color: #6A95A8;
+    font-size: .6em;
+    line-height: 48px;
+    margin: 0 0 0 20px;
+    letter-spacing: 5px;
+    content: "REEFPOINTS";
+  }
+
+  header section header h2 {
+    display: none;
+  }
+
+  header h1, header ul, header ul li, header ul li.last, header ul li a {
+    margin: 0;
+    padding: 0;
+    float: none;
+    line-height: 1;
+    background: none;
+  }
+  
+  header section {
+    padding: 20px;
+  }
+
+  header .mobile-nav {
+    float: right;
+    display: block;
+    margin: 10px 0;
+    padding: 0 10px;
+    line-height: 28px;
+    border-radius: 5px;
+    background: rgba(0,0,0,.1);
+  }
+  
+  header ul {
+    clear: both;
+    padding: 0 10px;
+    margin: 0 -20px;
+    background: #EEE;
+    position: relative;
+    top: 20px;
+    overflow: auto;
+    display: none;
+  }
+
+  header ul li {
+    margin: 10px 0;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  header ul li.last {
+    display: none;
+  }
+
+  header ul li a {
+    padding: 10px;
+    display: block;
+    background: #DDD;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1) inset;
+  }
+  
+  section#comments,
+  section#content > section#posts {
+    padding: 20px;
+  }
+
+  section#post article {
+    width: 100%;
+  }
+
+  section#post aside {
+    display: none;
+  }
+
+  section#content > section section.wrapper {
+    padding: 20px;
+  }
+  
+  section#content #who-we-are section {
+    padding: 20px 20px 0 20px;
+  }
+  
+  section#content #what-we-do,
+  section#content #how-we-work,
+  section#content #projects article {
+    padding: 0;
+    width: auto;
+    float: none;
+    margin: 0 0 20px 0;
+  }
+
+  section#content #projects img {
+    width: 100%;
+    float: none;
+  }
+  section#content #who-we-are .about-dockyard ul a {
+    margin: 0 0 10px 0;
+  }
+
+  section#content #who-we-are .about-dockyard,
+  section#content #who-we-are .team {
+    margin: 0;
+    padding: 0;
+    float: none;
+    width: auto;
+  }
+
+  section#content #who-we-are .team .info {
+    width: auto;  
+  }
+  
+  section#contact h2 {
+    font-size: 28px;
+  }
+
+  section#content #contact div.string label {
+    width: auto;
+    display: block;
+    padding: 0 0 5px 0;  
+  }
+
+  section#content #contact div.string input,
+  section#content #contact textarea {
+    width: 96%;
+    padding: 2%;
+  }
+  
+  section#content #contact textarea {
+    height: 160px;
+  }
+
+  section#content #contact input[type="submit"] {
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  footer ul li {
+    display: none;
+  }
+
+  footer ul li.last {
+    display: block;
+  }
+
 }
