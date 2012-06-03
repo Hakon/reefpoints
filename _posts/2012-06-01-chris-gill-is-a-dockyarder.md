@@ -6,6 +6,7 @@ author: Brian Cardarella
 twitter: bcardarella
 github: bcardarella
 summary: DockYard welcomes Chris Gill
+social: true
 category: announcement
 ---
 
