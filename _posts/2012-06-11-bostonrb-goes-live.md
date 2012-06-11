@@ -24,7 +24,7 @@ audience member will be able to.
 
 We're very excited about using this technology to expand
 [BostonRB](http://bostonrb.org). If things go well we will want to
-invite more user groups to virtuall attend our meetings in the future.
+invite more user groups to virtually attend our meetings in the future.
 If you are an organizer of a small local group and have difficulty
 pulling in some of the larger names in the Ruby community for
 presentations we want you to leverage BostonRB.
