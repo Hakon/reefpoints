@@ -7,7 +7,7 @@ twitter: bcardarella
 github: bcardarella
 category: ruby
 summary: Why comparing the too frameworks is dumb and how Ruby is still the best choice
-publish: false
+published: false
 social: true
 ---
 
