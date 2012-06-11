@@ -14,6 +14,7 @@ social: true
 
 Starting tomorrow night (June 12th, 2012) [The Boston Ruby Group](http://bostonrb.org)
 will be streaming its monthly meeting live via [Google Hangouts on Air](http://googleblog.blogspot.com/2012/05/google-hangouts-on-air-broadcast-your.html)
+The streaming will start at 6:45 PM US Eastern Time and the meeting itself will start at 7pm or a few minutes after. The meeting should run until 9pm.
 
 This will allow those that cannot attend the meeting to watch the raw
 stream live from anywhere in the world on [YouTube](http://youtube.com).
