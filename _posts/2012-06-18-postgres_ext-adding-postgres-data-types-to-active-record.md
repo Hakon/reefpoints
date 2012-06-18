@@ -3,7 +3,7 @@ layout: post
 title: "postgres_ext: Adding Posgres data types to Rails"
 comments: true
 author: Dan McClain
-twitter: _danmcclain
+twitter: "_danmcclain"
 github: danmcclain
 category: ruby
 social: true
@@ -57,7 +57,7 @@ end
 These migrations will be captured in your `schema.rb` file, so you don't
 have to use the `structure.sql` file if these types are your only reason. In
 fact, if you are using these only supported types with `structure.sql`,
-including the postgres_ext gem should allow you to correctly `rake
+including the postgres\_ext gem should allow you to correctly `rake
 db:schema:dump` your database.
 
 [Migration/Scheam.rb support documentation](https://github.com/dockyard/postgres_ext#migrationschemarb-support)
@@ -70,7 +70,8 @@ postgres\_ext converts INET and CIDR values to
 are cast as an array of integers, INET arrays to are cast to an array of
 IPAddrs).
 
-#### INET Type Casting example
+### INET Type Casting example
+
 {% highlight ruby %}
 create_table :inet_examples do |t|
   t.inet :ip_address
@@ -90,7 +91,8 @@ inet_2.ip_address
 # => #<IPAddr: IPv4:127.0.0.0/255.255.255.0> 
 {% endhighlight %}
 
-#### Array Type Casting example
+### Array Type Casting example
+
 {% highlight ruby %}
 create_table :people do |t|
   t.integer :favorite_numbers, :array => true
@@ -110,10 +112,12 @@ person_2.favoite_numbers
 # => [1,2,3]
 person_2.favoite_numbers.first.class
 # => Fixnum
-{ endhighlight %}
+{% endhighlight %}
 
 [Type casting documentation](https://github.com/dockyard/postgres_ext#type-casting-support)
+
 ## Another gem born out of necessity
+
 I have also released
 [pg\_array\_parser](https://github.com/dockyard/pg_array_parser), a C
 extension which parses PostgreSQL array values and returns an array of
