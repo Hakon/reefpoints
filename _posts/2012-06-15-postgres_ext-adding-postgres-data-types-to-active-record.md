@@ -33,8 +33,34 @@ PostgresSQL type:
  * UUID
  * Arrays
 
-Information on creating migrations for these types can be found
-[here](https://github.com/dockyard/postgres_ext#migrationschemarb-support)
+You can create columns with the following migration methods:
+
+{% highlight ruby %}
+create_table :examples do |t|
+  t.inet :ip_address
+  # INET Column
+
+  t.cidr :subnet
+  # CIDR Column
+
+  t.macaddr :mac_address
+  # MACADDR Column
+
+  t.uuid :unique_id
+  # UUID Column
+
+  t.integer :int_array, :array => true
+  # Integer[] Column
+end
+{% endhighlight %}
+
+These migrations will be captured in your `schema.rb` file, so you don't
+have to use the `structure.sql` file if these types are your only reason. In
+fact, if you are using these only supported types with `structure.sql`,
+including the postgres_ext gem should allow you to correctly `rake
+db:schema:dump` your database.
+
+[Migration/Scheam.rb support documentation](https://github.com/dockyard/postgres_ext#migrationschemarb-support)
 
 ### Type Casting
 
@@ -44,6 +70,49 @@ postgres\_ext converts INET and CIDR values to
 are cast as an array of integers, INET arrays to are cast to an array of
 IPAddrs).
 
+#### INET Type Casting example
+{% highlight ruby %}
+create_table :inet_examples do |t|
+  t.inet :ip_address
+end
+
+class InetExample < ActiveRecord::Base
+end
+
+inetExample = InetExample.new
+inetExample.ip_address = '127.0.0.0/24'
+inetExample.ip_address
+# => #<IPAddr: IPv4:127.0.0.0/255.255.255.0> 
+inetExample.save
+
+inet_2 = InetExample.first
+inet_2.ip_address
+# => #<IPAddr: IPv4:127.0.0.0/255.255.255.0> 
+{% endhighlight %}
+
+#### Array Type Casting example
+{% highlight ruby %}
+create_table :people do |t|
+  t.integer :favorite_numbers, :array => true
+end
+
+class Person < ActiveRecord::Base
+end
+
+person = Person.new
+person.favorite_numbers = [1,2,3]
+person.favorite_numbers
+# => [1,2,3]
+person.save
+
+person_2 = Person.first
+person_2.favoite_numbers
+# => [1,2,3]
+person_2.favoite_numbers.first.class
+# => Fixnum
+{ endhighlight %}
+
+[Type casting documentation](https://github.com/dockyard/postgres_ext#type-casting-support)
 ## Another gem born out of necessity
 I have also released
 [pg\_array\_parser](https://github.com/dockyard/pg_array_parser), a C
