@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "postgres_ext: Adding Posgres data types to Rails"
+title: "postgres_ext: Adding Postgres data types to Rails"
 comments: true
 author: Dan McClain
 twitter: "_danmcclain"
