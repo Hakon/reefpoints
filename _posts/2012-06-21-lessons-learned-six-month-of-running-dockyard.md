@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lessons Learned: The First Six Month of Running a Software
+title: "Lessons Learned: The First Six Months of Running a Software
 Consultancy"
 comments: true
 author: Brian Cardarella
