@@ -29,7 +29,7 @@ put us in a very difficult position when we were getting started. I went
 back to re-sign because the first contract ended in December. It turns
 out December is a *terrible* month for finding new work. I panicked,
 rookie move. Thankfully we have had great clients since. That's not to
-say we haven't dodge potentially bad clients from time to time.
+say we haven't had to dodge potentially bad clients from time to time.
 
 Some clients are just bad, but many are just "bad for us". Those two
 statements are very diffirent and recognizing the difference is
@@ -244,8 +244,8 @@ forward.
 
 ### Kick off ###
 
-We charge for this. Currently it is $1000. We sit down the client and
-will run through what they want soup to nuts. We'll development and
+We charge for this. Currently it is $1000. We will sit down the client and
+will run through what they want soup to nuts. We'll have development and
 design on hand for this meeting.
 
 ### Design Phase ###
