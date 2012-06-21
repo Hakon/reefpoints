@@ -32,7 +32,7 @@ rookie move. Thankfully we have had great clients since. That's not to
 say we haven't had to dodge potentially bad clients from time to time.
 
 Some clients are just bad, but many are just "bad for us". Those two
-statements are very diffirent and recognizing the difference is
+statements are very different and recognizing the difference is
 important. "Bad for us" clients might be fantasic people but the
 projects aren't in our wheel house, in those cases I try my best to help
 those people find other consultancies/freelancers.
