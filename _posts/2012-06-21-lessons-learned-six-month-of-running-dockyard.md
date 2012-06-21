@@ -231,6 +231,40 @@ us](mailto:contact@dockyard.com).
 
 3. More developers and designers.
 
+## Our Process ##
+
+We have modified how to engage clients. This is what we are currently
+doing
+
+### Initial Engagement ###
+
+Phone call, get to know the client. Determine if we are a good fit. If
+so and the client is happy with references, rate, etc... we move
+forward.
+
+### Kick off ###
+
+We charge for this. Currently it is $1000. We sit down the client and
+will run through what they want soup to nuts. We'll development and
+design on hand for this meeting.
+
+### Design Phase ###
+
+We originally combined development and design after the kickoff. This
+was a mistake. There is a lot to be learned by doing an upfront design
+phase. It helps us make informed estimations. The clients are happier
+when we can deliver what we estimate. This phase we generally go for
+wireframes and workflow. Nothing polished. We like to wireframe in
+HTML/CSS.
+
+### Development Phase ###
+
+Now that we have the general design worked out we begin development.
+There will also be design done during this phase as well.
+
+I would love to hear about other processes. What works, what doesn't
+work.
+
 ## Conclusion ##
 
 I hope some peope find this information useful. Please feel free to ask
