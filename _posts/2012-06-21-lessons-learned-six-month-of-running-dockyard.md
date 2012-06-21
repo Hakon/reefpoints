@@ -51,7 +51,7 @@ Whoops.
 ### Process ###
 
 I've changed from the "anything goes" type boss to the "I'm going to be
-the asshole" over the past six months. Here is why: we want to balance
+the hard-ass" over the past six months. Here is why: we want to balance
 multiple projects. Finding a client that has enough of a budget for a 6
 person team is great but not very likely if we stick with startups. So
 our team sizes are small, but we need to be redundant. I tell everyone
@@ -64,10 +64,14 @@ person a week to ramp up because we need to figure out what the last
 person was doing. *Process is very important*, I would rather have good
 developers that buy into our process than have awesome developers that
 don't. We function best as a team. So when someone isn't buying into the
-process we've been outlining I need to be the asshole. A few times this
+process we've been outlining I need to be the guy that says "no". A few times this
 has turned into debates, sometimes into arguments. I'm willing to modify
 our process if something better is proposed but I'm not willing to
-switch into the "just get it done".
+switch into the "just get it done". At the start I avoided uncomfortable conversations, 
+if something was happening that I didn't think was right for DockYard I would wait it out.
+This was a bad idea, the best time to correct something is now. Today I 
+am jumping on these things immediately. I would rather have an airing of grievances 
+when the issue is small rather than let it blow up.
 
 Here are some things that, arguably, are
 [bikeshedding](http://en.wikipedia.org/wiki/Parkinson's_Law_of_Triviality)
