@@ -39,7 +39,7 @@ those people find other consultancies/freelancers.
 
 ## Employees ##
 
-### Salary ###
+#### Salary ####
 
 DockYard started as bringing together three freelance developers. The
 first mistake I made was not insisting that everyone start on fulltime
