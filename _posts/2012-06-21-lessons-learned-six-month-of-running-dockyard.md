@@ -159,11 +159,11 @@ exposing DockYard to many people. I went from less than 100 LinkedIn
 connections to close to 1000 in a week. We got two contracts from doing
 this, it was worth it.
 
-Here are things that do not work
+Here are things that have not worked for us (yet)
 
 * Running Community Events
 * Sponsoring
-* Open Source Development
+* Open Source Development (see the comments for some interesting debate on this topic)
 
 I organize [BostonRB](http://bostonrb.org), it is one of the largest
 Ruby user groups in the world. We have awesome speakers every month.
