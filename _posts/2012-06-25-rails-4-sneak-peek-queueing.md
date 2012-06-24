@@ -21,12 +21,12 @@ that object is expected to respond to a `run` method. Let's take a look:
 
 {% highlight ruby %}
 class TestJob
-  def self.run
+  def run
     puts "I am running!"
   end
 end
 
-Rails.queue.push TestJob
+Rails.queue.push(TestJob.new)
 => "I am running!"
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ end
 and if we now push to our new queue:
 
 {% highlight ruby %}
-Rails.queue.push(TestJob)
+Rails.queue.push(TestJob.new)
 {% endhighlight %}
 
 ...we get nothing. Why? Inspect the QueueConsumer:
@@ -173,7 +173,7 @@ end
 Now we can run
 
 {% highlight ruby %}
-Rails.queue.push(TestJob)
+Rails.queue.push(TestJob.new)
 => "I am running!"
 {% endhighlight %}
 
