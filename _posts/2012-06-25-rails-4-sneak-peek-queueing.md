@@ -180,3 +180,6 @@ Rails.queue.push(TestJob.new)
 The queue system in Rails 4.0 is a very simple solution, I'm looking
 forward to the release and the support for it to be added to many of the
 leading background job processing libraries.
+
+Keep in mind that as of this writing the master branch is still
+versioned as 'beta'. This API could change.
