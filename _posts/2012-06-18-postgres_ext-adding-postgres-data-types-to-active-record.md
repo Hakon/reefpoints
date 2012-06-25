@@ -60,7 +60,7 @@ fact, if you are using these only supported types with `structure.sql`,
 including the postgres\_ext gem should allow you to correctly `rake
 db:schema:dump` your database.
 
-[Migration/Scheam.rb support documentation](https://github.com/dockyard/postgres_ext#migrationschemarb-support)
+[Migration/Schema.rb support documentation](https://github.com/dockyard/postgres_ext#migrationschemarb-support)
 
 ### Type Casting
 
