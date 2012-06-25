@@ -86,7 +86,7 @@ to tell Rails's QueueConsumer to use this queue. You can do this in
 
 {% highlight ruby %}
 intializer 'start queue consumer' do |app|
-  qpp.queue_consumer = config.queue_consumer.start(app.queue)
+  app.queue_consumer = config.queue_consumer.start(app.queue)
   at_exit { app.queue.consumer.shutdown }
 end
 {% endhighlight %}
